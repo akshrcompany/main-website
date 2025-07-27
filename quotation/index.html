@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Generator</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body id="quotationBody">
+    <h1>Quotation/Bill Generator</h1>
+
+    <label for="clientName">Client Name:</label>
+    <input type="text" id="clientName" placeholder="Enter client name"> <br>
+
+    <label for="clientAddress">Client Address:</label>
+    <input type="text" id="clientAddress" placeholder="Enter client address"> <br>
+    <label for="clientPhone">Client Phone:</label>
+    <input type="tel" id="clientPhone" placeholder="Enter client phone number"> <br>
+
+    <label for="clientEmail">Client Email:</label>
+    <input type="email" id="clientEmail" placeholder="Enter client email"> <br>
+    <label for="clientGST">Client GST:</label>
+    <input type="text" id="clientGST" placeholder="Enter client GST number"> <br>
+    <label for="tax">Tax (%):</label>
+    <input type="number" id="tax" value="0" oninput="updateGrandTotal()"> <br>
+    <label for="clientOrganization">Client Organization:</label>
+    <input type="text" id="clientOrganization" placeholder="Enter client organization name"> <br>
+    <label for="typeOfdoc">Type of Document:</label>
+    <select id="typeOfdoc">
+        <option value="QUATATION">Quotation</option>
+        <option value="INVOICE">Invoice</option>
+    </select> <br>
+
+    <label for="typeOfBill">Type of Bill:</label>
+    <select id="typeOfBill">
+        <option value="Due">Due</option>
+        <option value="Paid">Paid</option>
+        <option value="Advance">Advance</option>
+    </select> <br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date">
+    <br>
+    <label for="discount">Discount (%):</label>
+    <input type="number" id="discount" value="0" oninput="updateGrandTotal()"> <br>
+    <label for="currency">Currency:</label>
+    <select id="currency">
+        <option value="₹">₹ INR</option>
+        <option value="$">$ USD</option>
+        <option value="€">€ EUR</option>
+    </select> <br>
+    <label for="notes">Notes:</label>
+    <textarea id="notes" placeholder="Enter any additional notes..."></textarea>
+    <br>
+    <table id="quotationTable">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 20%;">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Initial row for the table -->
+            <tr>
+                <td><input type="text" class="description"></td>
+                <td><input type="number" class="quantity" value="1" oninput="updateGrandTotal()"></td>
+                <td><input type="number" class="price" oninput="updateGrandTotal()"></td>
+                <td class="delete-row-btn" onclick="deleteRow(this)">X</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-row-btn" id="addRow" >Add Row</button>
+    <button class="submit-btn" onclick="generateQuotation()">Submit</button>
+
+    <p class="total">Grand Total: Rs <span id="grandTotal">0.00</span></p>
+
+    <script>
+
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
