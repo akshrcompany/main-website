@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600&display=swap');
+
+body {
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Surface-Neutral-Background, #F9FAFB);
+    color: var(--Text-Primary, #121A21);
+    font-variant-numeric: lining-nums proportional-nums;
+
+}
+
+.container {
+    margin-bottom: 5vh;
+}
+
+.home h1,
+.home h2 {
+    margin-bottom: 1rem;
+    color: var(--Text-Primary, #121A21);
+    font-weight: 600;
+    text-align: center;
+
+}
+
+h4 {
+    text-align: center;
+}
+
+details {
+    margin-bottom: 1rem;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+
+    color: #FFF;
+
+
+
+}
+
+.akshrcard {
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.faq-section {
+    h2 {
+        text-align: center;
+    }
+
+    background: var(--Surface-Neutral-Hover, #F7F8FB);
+
+
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+.faq-section details {
+    max-width: 700px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--Stroke-Default, #D2D9E1);
+
+}
+
+.faq-section summary {
+
+    font-weight: 400;
+    color: var(--Text-Primary, #121A21);
+}
+
+.faq-section details p {
+    color: var(--Text-Primary, #121A21);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Syne;
+    font-style: normal;
+    padding-top: 2vh;
+    font-weight: 400;
+    line-height: 150%;
+    /* 21px */
+}
+
+.contact-form {
+    background-color: white;
+    padding: 10vh 0;
+
+}
+
+.contact-form form {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-family: Syne;
+    font-weight: 600;
+    color: var(--Text-Primary, #121A21);
+}
+
+.contact-form p {
+    text-align: center;
+    font-family: Syne;
+    font-weight: 400;
+    color: var(--Text-Primary, #121A21);
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 2vh;
+    font-family: Syne;
+    font-weight: 500;
+}
+
+.input-box-stacked:nth-child(2) {
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 1vh 0;
+    width: 100%;
+
+    input {
+        width: 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    label {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+    }
+}
+
+
+.input-box-stacked:nth-child(2) label {
+
+    display: flex;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form form {
+        width: 80%;
+    }
+}

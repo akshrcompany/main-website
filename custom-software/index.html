@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Software</title>
+    <link rel="stylesheet" href="https://akshr.in/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://akshr.in/css/Colors.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/components.css">
+      <link rel="stylesheet" href="../css/Colors.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="homesection">
+        <h1 class="heading">
+            Custom <br>
+            Software
+        </h1>
+
+        <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fcustom-software%2FHero-1.webp?alt=media&token=9bf42c2c-d10b-4d33-99a2-477ccbb7fd7b">
+    </div>
+
+
+    <div class="section unique">
+        <h1>Unique Systems for your Unique Needs</h1>
+        <p>
+            We know that sometimes, you may not have a fully defined plan for your software. That's where we come in.
+            Our team collaborates with you to understand your goals, identify the right solution, and create software
+            that's not just functional but perfectly aligned with your business operations.
+        </p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fcustom-software%2FSideHero1%20(1).webp?alt=media&token=f05c1fb7-ba25-485f-993d-dc4aebfab4da" alt="">
+    </div>
+
+
+    <div class="section callback">
+        <h1>
+            From Concept to Custom Solution, <br> Designed Just for You </h1>
+         <button onclick="document.getElementById('callback-modal').showModal()">
+            Request a callback <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13"
+                fill="none">
+                <path
+                    d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25V5.75ZM18.0303 7.03033C18.3232 6.73744 18.3232 6.26256 18.0303 5.96967L13.2574 1.1967C12.9645 0.903806 12.4896 0.903806 12.1967 1.1967C11.9038 1.48959 11.9038 1.96447 12.1967 2.25736L16.4393 6.5L12.1967 10.7426C11.9038 11.0355 11.9038 11.5104 12.1967 11.8033C12.4896 12.0962 12.9645 12.0962 13.2574 11.8033L18.0303 7.03033ZM1.5 6.5V7.25H17.5V6.5V5.75H1.5V6.5Z"
+                    fill="#FFFFFF" />
+            </svg>
+        </button>
+    </div>
+
+
+    <div class="features section">
+        <h1>Versatile solutions we have mastered</h1>
+        <p>At Akshr, we build software solutions that address your specific business needs. Whether it's streamlining
+            processes or enhancing user experiences, our custom applications are crafted to deliver exceptional results.
+        </p>
+        <div id="features-container">
+
+        </div>
+    </div>
+    <div class="section unique">
+        <h1>Scalable Systems for Businesses of All Sizes</h1>
+        <p>
+            Our custom softwares are designed with scalability in mind. Whether you're a small firm managing a few
+            employees or a large organization handling complex operations, we ensure that your solution grows with your
+            business.
+        </p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fcustom-software%2FDesktop%20Mobile%20Mockups.png?alt=media" alt="">
+    </div>
+    <div class="section callback">
+        <h1>
+            Let's build solutions that grow with you <br> and work as smart as your business
+            <br>             <button onclick="document.getElementById('callback-modal').showModal()">
+
+                Request a callback <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13"
+                fill="none">
+                <path
+                    d="M1.5 5.75C1.08579 5.75 0.75 6.08579 0.75 6.5C0.75 6.91421 1.08579 7.25 1.5 7.25V5.75ZM18.0303 7.03033C18.3232 6.73744 18.3232 6.26256 18.0303 5.96967L13.2574 1.1967C12.9645 0.903806 12.4896 0.903806 12.1967 1.1967C11.9038 1.48959 11.9038 1.96447 12.1967 2.25736L16.4393 6.5L12.1967 10.7426C11.9038 11.0355 11.9038 11.5104 12.1967 11.8033C12.4896 12.0962 12.9645 12.0962 13.2574 11.8033L18.0303 7.03033ZM1.5 6.5V7.25H17.5V6.5V5.75H1.5V6.5Z"
+                    fill="#FFFFFF" />
+            </svg>
+            </button>
+    </div>
+<dialog id="callback-modal" class="modal">
+  <!-- Modal Header -->
+  <div class="modal-header">
+    <span>Request a Callback</span>
+    <button class="close-btn" onclick="document.getElementById('callback-modal').close()">&times;</button>
+  </div>
+  <hr>
+  <!-- Modal Body -->
+  <div class="modal-body">
+    <p class="modal-desc">
+      Tell us a bit about yourself and your requirements, and we'll get in touch shortly. Our team is here to help you turn your ideas into reality.
+    </p>
+    <form class="callback-form" id="callback-form"></form>
+        <div class="input-box-stacked">
+            <label for="interest">Interested in:</label>
+            <select id="interest">
+                <option>Web / App Development</option>
+                <option>UI/UX Design</option>
+                <option>Design Services</option>
+            </select>
+        </div>
+        <div class="input-box-stacked">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" />
+        </div>
+        <div class="input-box-stacked">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Phone Number"/>
+        </div>
+        <div class="input-box-stacked">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email"/>
+        </div>
+        <div class="input-box-stacked">
+            <label>Preffered mode of contact</label>
+            <label><input type="radio" id="contact-phone" name="preferred_contact" value="phone">Phone</label>
+            <label><input type="radio" id="contact-email" name="preferred_contact" value="email">Email</label>
+        </div>
+        <div class="input-box-queue">
+            <label for="contact-date">
+              Date of contact
+              <input type="date" id="contact-date"/>
+            </label>
+            <label for="contact-time">
+              Time of contact
+              <input type="time" id="contact-time"/>
+            </label>
+        </div>
+    </form>
+  </div>
+  
+  <!-- Modal Footer -->
+  <div class="modal-footer">
+    <button class="button_primary"
+     type="submit" form="callback-form">Submit</button>
+  </div>
+</dialog>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LeB4X0rAAAAAGr1EXW-328lXsB0nM8gZlCL_WZR
+"></script>
+
+
+    <div id="footer-placeholder"></div>
+    <script src="https://akshr.in/javascript/footer.js"></script>
+    <script src="../javascript/navbar_all.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.radio-group {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .radio {
+    position: relative; 
+    width: 4rem; /* ~72px */
+    height: 4rem;
+  }
+  
+  .radio input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .custom-radio {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background: var(--main-fill);
+    z-index: 1;
+  }
+  
+  /* Border ring */
+  .custom-radio::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.3s all;
+    z-index: -1;
+  }
+  
+  /* When checked, show outline */
+  .radio input:checked + .custom-radio::before {
+    background: var(--outline);
+    -webkit-mask: radial-gradient(circle, #0000 2.1rem, #000 2.2rem);
+    mask: radial-gradient(circle, #0000 2.1rem, #000 2.2rem);
+  }
+  
+  /* Optional: white inset ring for visibility */
+  .custom-radio::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 0.15rem #fff;
+  }
+  
+  /* Themes */
+  .vertex {
+    --main-fill: black;
+    --outline: black;
+  }
+  
+  .pulse {
+    --main-fill: linear-gradient(61deg, #7B10C2 31.03%, #D6227B 68.74%, #FFC83A 91.34%);
+    --outline: linear-gradient(241deg, #7B10C2 31.03%, #D6227B 68.74%, #FFC83A 91.34%);
+  }
+  
+  .phantom {
+    --main-fill: linear-gradient(139deg, #8F8F8F 16.29%, #000 83.85%);
+    --outline: linear-gradient(319deg, #8F8F8F 16.29%, #000 83.85%);
+  }
+  
+  .matrix {
+    --main-fill: linear-gradient(139deg, #007D3B 16.29%, #000 83.85%);
+    --outline: linear-gradient(319deg, #007D3B 16.29%, #000 83.85%);
+  }
+  
+
+  @media (max-width: 600px) {
+    .radio {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  
+    .custom-radio::before {
+      top: -0.4rem;
+      left: -0.4rem;
+      width: calc(100% + 0.8rem);
+      height: calc(100% + 0.8rem);
+    }
+  
+    .radio input:checked + .custom-radio::before {
+      -webkit-mask: radial-gradient(circle, #0000 1.5rem, #000 1.6rem);
+      mask: radial-gradient(circle, #0000 1.5rem, #000 1.6rem);
+    }
+  }
+  

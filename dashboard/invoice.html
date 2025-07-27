@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Invoice - Akshr</title>
+    <link rel="stylesheet" href="invoice_style.css" />
+    <link rel="stylesheet" href="https://akshr.in/Colors.css">
+</head>
+
+<body>
+    <div class="invoice-container">
+        <header>
+            <div>
+                            <img src="./images/Akshr Logo-12 1.png" alt="">
+
+            </div>
+          
+            <div>
+                <h1>Tax Invoice</h1>
+                <p>(Original for Recipient)</p>
+            </div>
+        </header>
+        <section class="billed-info">
+            <div>
+                <h3>Billed to</h3>
+                <p><span id="customer_name">Shoury Jain</span><br>
+                    <span id="address_line_1">1567, Elza School</span><br>
+                    <span id="address_line_2">Yadav Colony, Vivekanand Ward</span><br>
+                    <span id="city">Jabalpur</span>, <span id="state">Madhya Pradesh</span> <span
+                        id="pincode">482001</span><br>
+                    <span id="phone_number">8269331289</span><br>
+                </p>
+            </div>
+            <div>
+                <h3>Transaction ID</h3>
+                <p><span id="transaction_id">98YE23E4Y8338H</span></p><br><br>
+                <h3>Invoice Date:</h3>
+                <p><span id="invoice_date">09/10/2025</span></p>
+            </div>
+            <div>
+                <h3>Akshr</h3>
+                <p>629, Shakti Nagar<br>
+                    Jabalpur, Madhya Pradesh<br>
+                    Pin Code - 482001<br>
+                    <a href="https://www.akshr.in">www.akshr.in</a><br>
+                    +91 6263799043<br>
+                    akshrcompany@gmail.com
+                </p>
+            </div>
+        </section>
+
+
+
+        <section class="item-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Items</th>
+                        <th>Quantity</th>
+                        <th>HSN Code</th>
+                        <th>Unit Price</th>
+                        <th>GST (18%)</th>
+                        <th>Total (incl. GST)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>AkshrCard</td>
+                        <td>1</td>
+                        <td>85235200</td>
+                        <td id="unit_price"></td>
+                        <td id="unit_price_gst">₹76.27</td>
+                        <td id="total_base_price">₹500</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Delivery Charges</td>
+                        <td>1</td>
+                        <td>85235200</td>
+                        <td id="shipping_price">₹59.32</td>
+                        <td id="shipping_price_gst">₹10.68</td>
+                        <td>₹70</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Discount</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td id="discount"></td>
+                        <td>-0</td>
+                        <td id="discountTotal"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6" style="text-align: right;"><H3>Grand Total:</H3></td>
+                        <td><H3 id="totalPrice"></H3></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+
+        <section class="sales-info">
+
+
+            <div>
+                <h3>Date & Time of Order:</h3>
+                <p><span id="date_time">09/10/2025, 09:12:34</span> </p><br><br>
+            </div>
+            <div>
+                <h3>Payment Method:</h3>
+                <p><span id="payment_method"></span></p>
+            </div>
+            <div>
+                <h3>GSTIN:</h3>
+                <p>23ACHFA5534A1Z0</p>
+            </div>
+            <div>
+                <h3>PAN:</h3>
+                <p>ACHFA5534A</p>
+            </div>
+
+
+        </section>
+        <hr class="blue">
+        <section class="terms">
+            <div>
+                <h3>Terms & Conditions</h3>
+                <ol>
+                    <li>All disputes will be subjected to Madhya Pradesh Jurisdiction.</li>
+                    <li>All items25 are meant for Personal Use only. Not for Resale.</li>
+                    <li>Whether tax is payable under reverse charge – No.</li>
+                </ol>
+            </div>
+
+            <div>
+                <br><br>
+                <p style="text-align: right;">© 2025 Akshr. All rights reserved<br>This is a system generated invoice, signature not required.</p>
+
+
+            </div>
+
+        </section>
+    </div>
+
+    <script type="module" src="invoice.js"></script>
+</body>
+
+</html>

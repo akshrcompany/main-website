@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+html,
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+    background-color: white;
+    
+}
+
+/* General Section Styling */
+.section {
+    padding: 0 16%;
+    min-height: 100vh;
+}
+
+h1{
+    font-weight: 500;
+}
+
+.two-cols {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4vh;
+}
+
+.two-cols>div {
+    flex: 1 1;
+    margin: auto;
+}
+
+.side-hero {
+    margin-top: 20vh;
+}
+
+p {
+    color: var(--Text-Secondary);
+}
+
+
+.side-hero .text {
+    padding: 5vh 0;
+    margin: auto;
+
+
+    h2 {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        line-height: 150%;
+        font-weight: 500;
+        font-variant-numeric: lining-nums proportional-nums;
+    }
+
+    p {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        line-height: 150%;
+        font-weight: 400;
+        font-variant-numeric: lining-nums proportional-nums;
+    }
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar img {
+    width: auto;
+}
+
+
+/* Home Section */
+.homesection {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 4vh;
+
+}
+
+.homesection h1 {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: xxx-large;
+    font-weight: 500;
+    text-align: left;
+    margin: 2% 10%;
+}
+
+.homesection img {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(0%);
+    width: 100%;
+}
+
+/* Callback Section */
+.callback {
+    text-align: center;
+    padding: 10vh 5vh;
+    min-height: 30vh;
+
+}
+
+.callback {
+    background: #EFF2F5;
+}
+
+.callback h1 {
+    color: var(--Text-Primary);
+    font-size: 5vh;
+    font-weight: 400;
+    line-height: 68px;
+}
+
+.callback button {
+    padding: 1rem;
+    font-family: inherit;
+    color: var(--Text-OnPrimary);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 0.5rem;
+    background: var(--Surface-Blue-Default);
+    border: none;
+}
+
+.callback button:hover {
+    background: var(--Surface-Blue-Hover);
+    color: var(--Text-OnPrimary);
+    cursor: pointer;
+}
+
+.offer {
+    text-align: center;
+    padding: 5vh 0;
+    min-height: 30vh;
+    margin: 10vh auto;
+}
+
+.offer h3 {
+    font-weight: 500;
+}
+
+.gridsection {
+    display: grid;
+    width: 50%;
+    margin: 4vh auto;
+    gap: 2vw 0;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vh 10vw;
+    justify-content: space-between;
+    margin: 8vh auto;
+}
+
+.threegrid {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    margin: 6vh 0 6vh 0;
+}
+
+.threegrid img {
+    width: 30%;
+}
+
+.item {
+    flex: 1 1 calc(40% - 10px);
+    box-sizing: border-box;
+    margin: 5px;
+    padding-right: 2vh;
+    padding-left: 2vh;
+}
+
+.logos {
+    flex: 1 1 calc(40% - 10px);
+    box-sizing: border-box;
+}
+
+.gridsection .item img {
+    width: 16%;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio .first-child {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+.portfolio h2 {
+    line-height: 150%;
+    font-weight: 500;
+    color: var(--Text-Primary);
+    position: relative;
+    font-variant-numeric: lining-nums proportional-nums;
+
+}
+
+.portfolio h2 svg {
+    position: absolute;
+    bottom: 8%;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio a {
+    color: inherit;
+    font-size: inherit;
+
+}
+
+.portfolio .portfolio p {
+    line-height: 150%;
+    color: var(--Text-Secondary);
+    font-variant-numeric: lining-nums proportional-nums;
+    margin-top: 0;
+}
+
+.portfolio h4 {
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--Text-Primary);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-variant-numeric: lining-nums proportional-nums;
+    margin-bottom: 0;
+}
+
+.portfolio h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.portfolio .gridsection img {
+    width: 90%;
+    border: 1px solid var(--Stroke-Default);
+}
+
+.portfolio .gridsection {
+    display: grid;
+    width: 100%;
+    margin: 4vh auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw 1vw;
+    padding: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 0 10%;
+    }
+
+    .homesection {
+        min-height: 100vh;
+        position: relative;
+        max-width: 100vw;
+        overflow-x: hidden;
+
+    }
+    .homesection img {
+        transform: translateY(0%) translateX(-50%);
+        width: 340%;
+
+    }
+
+    .callback {
+        text-align: center;
+        padding: 6vh 5vh 12vh 5vh;
+        min-height: 30vh;
+
+    }
+
+    .two-cols {
+        flex-direction: column;
+    }
+
+    .two-cols>div {
+        width: 100%;
+        flex: none;
+    }
+
+    .item {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .gridsection .item img {
+        width: 12vw;
+    }
+
+    .gridsection {
+        width: 90%
+    }
+
+    .portfolio .first-child {
+        width: 100%;
+        margin-bottom: 16vh;
+    }
+
+    .side-hero img {
+        width: 80%;
+    }
+
+   
+
+
+
+}
+.input-box-stacked:nth-child(7) {
+    display: flex
+;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 1vh 0;
+    width: 100%;
+}
+.input-box-stacked:nth-child(7) label {
+    display: flex
+;
+    text-align: left;
+}

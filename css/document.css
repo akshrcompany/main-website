@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    color: #1D1D1D;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2 {
+    color: #1D1D1D;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.container a {
+    color: #1D1D1D;
+    font-family: Montserrat;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+p,
+ul{
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%;
+}

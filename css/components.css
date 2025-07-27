@@ -1,0 +1,370 @@
+/* There will no font declaration 
+there will no hard coded font size and color values 
+there will be no hard coded values for padding and margin
+*/
+label {
+    width: 100%;
+    font-size: small;
+    color: var(--Text-Primary, #121A21);
+    font-size: 0.75rem;
+    transition: 0.5s;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-family: inherit;
+    font-variant-numeric: lining-nums tabular-nums;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    border: 1px solid var(--Stroke-Default, #D2D9E1);
+    background: var(--Surface-Neutral-Default, #FFF);
+    padding: 12px 12px 12px 12px;
+    /* space for the icon */
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1rem;
+    font-family: 400;
+    line-height: 150%;
+    color: var(--Text-Tertiary);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    border: 1px solid var(--Stroke-Blue, #2782D0) !important;
+    /* Active State */
+    box-shadow: 0px 0px 0px 4px var(--Effects-Drop-Shadow-Active-Field, #C2DDF5);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    border: 1px solid var(--Stroke-Hover);
+
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background: var(--Surface-Neutral-Disabled);
+    border: 1px solid var(--Stroke-Disabled);
+}
+
+input.error {
+    border: 1px solid var(--Stroke-red);
+}
+
+support {
+    color: var(--Text-Tertiary);
+    font-size: 0.75rem;
+}
+
+
+select {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 2rem !important;
+}
+
+/* Class - InputBox */
+.input-box-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    input {}
+
+    label {}
+
+    support {}
+}
+
+.input-box-queue {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.input-trailing-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.trailing-icon-btn {
+    position: absolute;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.trailing-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--Icon-Default);
+    pointer-events: none;
+}
+
+.button_primary {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    background-color: var(--Surface-Neutral-Black, #121A21);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--Text-White, #FFFFFF);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button_primary:not(:disabled):hover {
+    background: var(--Black-Hover);
+}
+
+.button_primary:disabled {
+    background-color: var(--Surface-Neutral-Disabled, #F2F4F7);
+    color: var(--Text-Disabled, #A1A6B2);
+    cursor: not-allowed;
+}
+
+.button_secondary {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    background-color: var(--Surface-Neutral-Default, #FFFFFF);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Text-Primary, #121A21);
+    border-radius: 0.5rem;
+    border: 1px solid var(--Stroke-Default, #D2D9E1);
+    cursor: pointer;
+    font-family: inherit;
+
+}
+
+.button_secondary:not(:disabled):hover {
+    background: var(--Surface-Neutral-Hover);
+    border: 1px solid var(--Stroke-Black);
+}
+
+.button_secondary:disabled {
+    background: var(--Surface-Neutral-Disabled);
+    border: 1px solid var(--Stroke-Disabled);
+    color: var(--Text-Disabled);
+    cursor: not-allowed;
+}
+
+.button_tertiary {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Text-Secondary);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
+}
+
+.button_tertiary:not(:disabled):hover {
+    color: var(--Text-Primary);
+    text-decoration: underline;
+}
+
+.button_tertiary:disabled {
+    color: var(--Text-Disabled);
+    cursor: not-allowed;
+}
+
+details {}
+
+details span {
+    display: inline-block;
+    width: calc(100% - 1rem);
+    padding: 1rem 0 1rem 1rem;
+    padding-right: 0;
+    border-bottom: 1px solid var(--Stroke-Default);
+
+}
+
+
+
+details summary {
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--Text-Primary, #121A21);
+    padding: 1rem;
+}
+
+details p {
+    background: var(--Surface-Neutral-Default);
+    padding-left: 1rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Stroke-Default);
+}
+
+
+/* Remove default marker */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    position: relative;
+    padding-right: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Custom arrow on right side */
+summary::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M11.992 15.9855C11.8872 15.9867 11.7833 15.9679 11.6869 15.9305C11.5906 15.893 11.5039 15.8377 11.4326 15.7681L4.23976 9.24638C3.92008 8.95652 3.92008 8.50725 4.23976 8.21739C4.55944 7.92754 5.05494 7.92754 5.37463 8.21739L12.008 14.2319L18.6254 8.23188C18.9451 7.94203 19.4406 7.94203 19.7602 8.23188C20.0799 8.52174 20.0799 8.97101 19.7602 9.26087L12.5674 15.7826C12.4076 15.9275 12.1998 16 12.008 16L11.992 15.9855Z' fill='%23415467'/></svg>") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+}
+
+/* Rotate arrow when open */
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* When the details is open, change the summary background */
+details[open] summary {
+    background: var(--Surface-Neutral-Disabled);
+    /* border-bottom: 1px solid var(--Stroke-Default); */
+}
+
+details:not([open]) :hover {
+    background: var(--Surface-Neutral-Hover);
+    border-bottom: 1px solid var(--Stroke-Hover);
+}
+
+/* Dialog */
+.dialog {
+    overflow-y: scroll;
+}
+
+
+/* google login button  */
+.google-button {
+    background-color: transparent;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 0.5vw;
+    border: 1px solid var(--Stroke-Default, #D2D9E1);
+    background: var(--Surface-Neutral-Default, #FFF);
+}
+
+.google-button:hover{
+    background: var(--Surface-Neutral-Hover);
+    border: 1px solid var(--Stroke-Hover);
+}
+/*Modal*/
+
+.modal {
+    width: 80vw;
+    max-width: 1024px;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    font-family: inherit;
+    /* overflow: hidden; */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--Stroke-Default);
+    background: none;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    padding-top: 1.5vh;
+    padding-bottom: 0;
+
+}
+
+.modal-body {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    height: 5vh;
+    background: var(--Surface-Neutral-Hover, #F7F8FB);
+}
+
+.modal p {
+    margin: 0;
+}
+
+.modal-footer button {
+    font-family: inherit;
+}

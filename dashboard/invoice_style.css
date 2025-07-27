@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body {
+    font-family: 'Syne', sans-serif;
+    background: #f9f9f9;
+    color: #121A21;
+
+    margin: 0;
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+h3,
+h4 {
+    font-weight: 500;
+    color: #121A21;
+    line-height: 150%;
+    margin-block-start: 0;
+    margin-block-end: 0.1rem;
+}
+
+p {
+    color: #415467;
+    line-height: 150%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+li {
+    color: #415467;
+    line-height: 150%;
+}
+
+.invoice-container {
+    background: white;
+    max-width: 900px;
+
+    margin: auto;
+    padding-top: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    align-items: center;
+     display: flex;
+    justify-content: space-between;
+}
+header div {
+    max-width: 30%;
+}
+
+header img {
+    height: 45px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 500;
+}
+
+.billed-info,
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.billed-info div {
+    width: 30%;
+}
+
+.company-info a {
+    color: #415467;
+    text-decoration: none;
+}
+
+.item-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.item-table th,
+.item-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.item-table th {
+    background: var(--Neutral-100, #EDF0F5);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.item-table tfoot td {
+    background: #EDF0F5;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 0.9em;
+    color: #EDF0F5;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 30px;
+}
+
+.sales-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: flex-start;
+    gap: 0 2%;
+    /* optional: adds space between columns */
+}
+
+.sales-info div {
+    flex: 0 0 33%;
+    /* three per row, with some gap */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    /* optional: space between rows */
+}
+
+.blue1 {
+    background-color: var(--Surface-Blue-Default, #2782D0);
+    height: 4px;
+
+    float: left;
+    width: 43%;
+}
+
+.blue {}
+
+.terms {
+    display: flex;
+    font-size: 0.9em;
+    justify-content: space-between;
+}
+
+.terms div:first-child {
+    width: 70%;
+}
+
+.terms div:last-child {
+    width: 30%;
+}
+
+.terms h4 {
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  body{
+    width: max-content;
+  }
+}

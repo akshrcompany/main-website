@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+body {
+    font-family: Syne;
+    margin: 0;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    overflow-x: hidden;
+
+    max-width: 100%;
+}
+
+body .no-scroll {
+    overflow: hidden;
+}
+
+p{
+    color: var(--Text-Secondary);
+    line-height: 150%;
+}
+
+h2,h4{
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Text-Primary);
+}
+
+
+#myVideo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    transition: top 0.5s ease;
+    /* Add smooth transition for the top property */
+    margin-bottom: 0%;
+
+}
+
+#homesection {
+    margin-top: 0%;
+    background: #E0EAF8;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--Text-Secondary);
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+#homesection .content {
+    margin: 0;
+    padding: 2vh 2vw;
+}
+.homesection_logo {
+  width: 20vh;
+}
+#moto {
+    background: #FFF;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Moto */
+
+#moto .heading {
+
+
+    color: var(--Text-Primary);
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10vh;
+}
+
+#qoutes {
+    color: var(--Akshr-Blue, #1863AA);
+    margin-bottom: 0;
+    font-family: 'Big Shoulders Stencil Display';
+    font-size: 40vh;
+    font-style: normal;
+    margin-bottom: -30vh;
+    font-weight: 400;
+    line-height: 30vh;
+    z-index: 99;
+
+    /* 507.585px */
+}
+
+.container1 h1 {
+    font-weight: 400;
+}
+
+/* Adjust layout for desktop */
+@media (min-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    .alter {
+        order: -1;
+    }
+
+    #homesection {
+        flex-direction: row;
+        padding-top: 0;
+        /* Remove padding for desktop layout */
+    }
+
+    #team {
+        flex-direction: row;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Remove padding for desktop layout */
+    }
+
+    #team .content {
+        text-align: left;
+    }
+
+    .content,
+    #moto .heading {
+        width: 50%;
+        /* Two divs side by side */
+    }
+
+    .heading h1 {
+        margin: 0;
+    }
+
+    #qoutes {
+        margin-bottom: 0;
+    }
+
+    .content p {
+        text-align: left;
+        width: 90%;
+        color: var(--Text-OnPrimary);
+    }
+    .homesection_logo {
+  width: 35vh;
+}
+}
+
+/* Styling for both divs */
+.content {
+    margin: 2.5vw;
+    /* Adjusted for responsiveness */
+    text-align: center;
+}
+
+.content p {
+    text-align: left;
+    line-height: 150%;
+    color: var(--Text-Secondary);
+
+}
+
+#moto .content {
+    color: var(--Text-Secondary);
+    font-family: Syne;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27.54px */
+}
+
+/* Adjust video position based on scroll */
+body.scrolled #myVideo {
+    top: 100vh;
+    /* Move video down when scrolled */
+}
+
+/* modal theming */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+dialog {
+    color: white;
+    background: var(--Akshr-Blue, #1863AA);
+
+}
+
+#team {
+    background: var(--Surface-Blue-Hover);
+    color: var(--Text-OnPrimary);
+    padding-top: 4vh;
+
+    padding-left: 4vw;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+#team button {
+    color: var(--Text-OnPrimary);
+    padding: 1rem;
+    font-size: larger;
+    font-family: Syne;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    background: var(--Surface-Blue-Hover);
+}
+
+#team img {
+    width: 100%;
+}
+
+.screen .touch {
+    position: absolute;
+    bottom: 10%;
+    left: 45.5%;
+    width: 38px;
+    height: 38px;
+    background: rgba(224, 224, 224, 0.75);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #333;
+}
+
+.section {
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#contact h1 {
+    line-height: 1;
+    font-size: 7vh;
+}
+
+#contact p {
+    font-size: larger;
+}
+
+.swipe-up {
+    animation: swipe-up 1.5s ease-in-out 0.5s infinite;
+}
+
+
+
+
+
+/* Contact section figures */
+.figure {
+    border-radius: 1020.021px;
+    border: 1px solid #9CC5FF;
+
+    width: 536.853px;
+    height: 1020.021px;
+    transform: rotate(55.436deg);
+}
+
+.figure1 {
+    border: 1px solid #9CC5FF;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    /* To place it behind other elements if needed */
+
+}
+
+
+.center-div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    line-height: 5vh;
+
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 3px;
+}
+
+.center-div p {
+    font-family: Syne;
+    font-style: normal;
+
+    font-weight: 200;
+
+
+}
+
+
+
+
+@keyframes swipe-up {
+    0% {
+        transform: translate(0, 0%) scale(0);
+    }
+
+    10% {
+        transform: translate(0, 0%) scale(0);
+    }
+
+    20% {
+        transform: translate(0, 0%) scale(1);
+    }
+
+    80% {
+        transform: translate(0, -300%) scale(1);
+    }
+
+    90% {
+        transform: translate(0, -300%) scale(0);
+    }
+
+    100% {
+        transform: translate(0, -300%) scale(0);
+    }
+}

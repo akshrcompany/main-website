@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+html,
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+    background-color: white;
+
+}
+
+/* Home Section */
+.homesection {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 4vh;
+
+}
+
+.homesection h1 {
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: xxx-large;
+    font-weight: 500;
+    text-align: left;
+    margin: 2% 10%;
+    color: var(--Text-Primary);
+}
+
+.homesection img {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(0%);
+    width: 100%;
+}
+
+.two-cols {
+    display: flex;
+    gap: 2rem;
+    margin-top: 4vh;
+}
+
+.two-cols>div {
+    flex: 1 1;
+    margin: auto;
+}
+
+.second_section {
+    div:first-of-type {
+        text-align: center;
+    }
+
+    img {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+.side-hero {
+    margin-top: 20vh;
+}
+
+.side-hero .text {
+    padding: 5vh 0;
+    margin: auto;
+
+
+    h2 {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        line-height: 150%;
+        font-weight: 500;
+        font-variant-numeric: lining-nums proportional-nums;
+    }
+
+    p {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        line-height: 150%;
+        font-weight: 400;
+        font-variant-numeric: lining-nums proportional-nums;
+    }
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {}

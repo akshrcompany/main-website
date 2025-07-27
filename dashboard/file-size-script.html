@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Size Checker and Cropper</title>
+</head>
+<body>
+
+  <h2>Upload and Crop a Photo</h2>
+  <input type="file" id="fileInput">
+  <div id="originalPreviewContainer">
+    <p>Original Image Preview:</p>
+    <img id="originalPreview" alt="Original Image Preview" style="max-width: 300px; max-height: 200px;">
+  </div>
+  <div id="croppedPreviewContainer" style="display:none;">
+    <p>Cropped Image Preview:</p>
+    <img id="croppedPreview" alt="Cropped Image Preview" style="max-width: 300px; max-height: 200px;">
+    <br>
+    <button id="downloadButton">Download Cropped Image</button>
+  </div>
+
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function() {
+      var fileInput = this;
+
+      // Check if any file is selected
+      if (fileInput.files.length > 0) {
+        var file = fileInput.files[0];
+
+        // Check file size in bytes
+        var fileSizeInBytes = file.size;
+
+        // Convert file size to megabytes (1 MB = 1048576 bytes)
+        var fileSizeInMB = fileSizeInBytes / (1024 * 1024);
+
+        // Check if the file size is greater than 1 MB
+        if (fileSizeInMB > 1) {
+          alert('File size exceeds 1 MB. Please choose a smaller file.');
+          // You can also reset the file input if needed
+          fileInput.value = '';
+        } else {
+          // Read the selected image
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            var img = new Image();
+
+            // Display original image preview
+            var originalPreview = document.getElementById('originalPreview');
+            originalPreview.src = e.target.result;
+
+            img.onload = function() {
+              // Calculate the target size for cropping
+              var targetSize = Math.min(img.width, img.height);
+
+              // Create a canvas element
+              var canvas = document.createElement('canvas');
+              var ctx = canvas.getContext('2d');
+
+              // Set canvas dimensions to create a square cropped image
+              canvas.width = targetSize;
+              canvas.height = targetSize;
+
+              // Calculate cropping dimensions
+              var xOffset = (img.width - targetSize) / 2;
+              var yOffset = (img.height - targetSize) / 2;
+
+              // Draw the cropped image on the canvas
+              ctx.drawImage(img, xOffset, yOffset, targetSize, targetSize, 0, 0, targetSize, targetSize);
+
+              // Get the cropped image as data URL
+              var croppedImageDataURL = canvas.toDataURL('image/jpeg');
+
+              // Display the cropped image preview
+              var croppedPreview = document.getElementById('croppedPreview');
+              croppedPreview.src = croppedImageDataURL;
+
+              // Display or send the cropped image data as needed
+              console.log('Cropped Image Data URL:', croppedImageDataURL);
+
+              // Show the cropped image preview container
+              var croppedPreviewContainer = document.getElementById('croppedPreviewContainer');
+              croppedPreviewContainer.style.display = 'block';
+
+              // Add download button functionality
+              var downloadButton = document.getElementById('downloadButton');
+              downloadButton.addEventListener('click', function() {
+                download(croppedImageDataURL, 'cropped_image.jpg');
+              });
+            };
+            img.src = e.target.result;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    });
+
+    // Function to download the image
+    function download(dataURL, filename) {
+      var a = document.createElement('a');
+      a.href = dataURL;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
+</body>
+</html>

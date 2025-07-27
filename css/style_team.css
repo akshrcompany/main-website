@@ -1,0 +1,170 @@
+#team h1 {
+    font-size: 7vh;
+    margin: 0;
+}
+.dialog-content { max-height: 80vh; overflow-y: auto; }
+
+dialog {
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+dialog button{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.team-container {
+
+    -webkit-overflow-scrolling: touch;
+    /* Enable touch scrolling on iOS devices */
+    width: 80%;
+    margin:0 auto
+    /* Ensure the container takes up the full width */
+}
+
+#team button:hover{
+background-color: white;
+color:#1863AA;
+cursor: pointer;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 3rem 1rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    /* Other styles remain the same */
+}
+
+
+.member {
+    flex: 0 0 auto;
+    max-width: calc((100vw - 5rem) / 5);
+    /* Adjust the number 5 according to the number of team members */
+    margin: 0 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    line-height: 0.5;
+    margin-bottom: 8vh;
+}
+
+.member .name {
+    line-height: normal;
+    margin-bottom: -1vh;
+        color: var(--Text-OnPrimary);
+
+}
+
+#team .content p{
+    color: var(--Text-OnPrimary);
+}
+
+.member img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+
+.member .social a {
+    color: inherit;
+    margin: 0 0.5rem;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .member {
+        max-width: calc((100vw - 3rem) / 2);
+        /* Adjust the number 2 according to the number of team members */
+    }
+    
+}
+
+
+.member {
+    flex: 0 0 auto;
+    max-width: calc((100vw - 5rem) / 5);
+    /* Adjust the number 5 according to the number of team members */
+    margin: 0 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.member h2 {
+    font-size: large;
+    color: var(--Text-OnPrimary) !important;
+}
+
+.member .social a {
+    color: inherit;
+    margin: 0 0.5rem;
+}
+
+/* New CSS for smaller screens */
+
+@media only screen and (max-width: 600px) {
+    .member {
+        max-width: calc((100vw - 3rem) / 4);
+        /* Adjust the number 2 according to the number of team members */
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 786px) {
+    .member h2 {
+        font-size: x-large;
+    }
+
+
+
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.team::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.team {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+.designation{
+    font-size: larger;
+    font-weight: normal;
+    
+}
+@media (max-width: 786px) {
+    .team {
+        margin: 0;
+        grid-template-columns: repeat(2, minmax(30vw, 40vw));
+                gap: 1vh;
+        margin: 0 auto;
+        text-align: center;
+        place-items: center;
+        /* Center both horizontally and vertically */
+
+
+    }
+.team .content{
+    text-align: center;
+}
+    .member {
+        margin: 1vh 0;
+    }
+
+    .team-container {
+        width: 100vw;
+    }
+}

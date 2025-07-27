@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.home img {
+    margin-top: 0;
+    width: 50%;
+}
+
+svg {
+    display: inline-block;
+    margin: auto 1vh;
+}
+
+.sidebar {
+    width: 15%;
+    font-family: Syne;
+    background: #1A232D;
+    overflow-x: hidden;
+    padding-top: 5vh;
+    flex-shrink: 0;
+
+    transition: 250ms;
+}
+
+.selected {
+    background: #293F59;
+
+
+
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-top: 0;
+}
+
+.sidebar a {
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: large;
+    padding: 1vh;
+    border-radius: 8px;
+    width: 80%;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+
+}
+.sidebar a:hover {
+    background: #293F59;
+  
+    }
+#signout {
+    position: absolute;
+    top: 90%;
+}
+
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 10vh;
+    right: 10%;
+    margin-left: 50px;
+    display: none;
+    text-align: right;
+}
+
+
+.openbtn {
+
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        padding-top: 0;
+        text-align: left;
+    }
+
+    #signout {
+        position: relative;
+        top: 55%;
+    }
+
+    .sidebar {
+        padding-top: 5vh;
+        font-size: medium;
+    }
+
+    .sidebar a {
+        margin-left: 10vw;
+        transition: 100ms;
+    }
+
+    .main-content-home {
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+    }
+
+    .heading {
+        margin: 5vh 0;
+    }
+
+    .openbtn {
+        font-size: 30px;
+        cursor: pointer;
+        color: #111;
+        border: none;
+        text-align: right;
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 0;
+        margin-top: 5vh;
+
+    }
+
+}

@@ -1,0 +1,245 @@
+.product-container {
+
+    display: flex;
+    background-color: var(--Surface-Neutral-Default);
+
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 6vh;
+    text-align: left;
+    width: 100%;
+}
+
+.product {
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product img {
+    width: 25vw;
+    height: 25vw;
+    min-width: 150px;
+    min-height: 150px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.product h1 {
+    color: var(--Text-Primary);
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.product p {
+    font-family: Syne;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 150%;
+    color: var(--Text-Secondary);
+
+}
+
+.product a {
+    border: 1px solid #292929;
+    text-decoration: none;
+    color: #292929;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15vh;
+    /* margin-top: 20px; Adjust as needed */
+}
+
+.quote-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 31%;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Syne', sans-serif;
+}
+
+.quote-mark {
+    font-size: 8rem;
+    color: #1863AA;
+    position: absolute;
+    font-family: 'Big Shoulders Stencil Display';
+    font-size: 20rem;
+}
+
+.top-quote {
+    top: -80px;
+    left: -80px;
+}
+
+.bottom-quote {
+    bottom: -290px;
+    right: -80px;
+}
+
+.quote-content {
+    margin: 50px 20px;
+
+}
+
+.quote-content h1 {
+    font-size: 3rem;
+    /* Adjusted to dynamically take full width */
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    /* Center align for better visual balance */
+}
+
+.author {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+    .product {
+        position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 40vh;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .product img {
+        margin-bottom: 0;
+    }
+
+
+    .product-text {
+        margin-left: 20px;
+
+
+    }
+
+    .product p {
+        width: 40vw;
+        font-size: large;
+
+    }
+    .reverse{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap:25vh
+    }
+
+    .heading {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .quote-mark {
+        font-size: 12rem;
+    }
+
+    .top-quote {
+        position: static;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .bottom-quote {
+        position: static;
+        text-align: right;
+        margin-right: 0;
+    }
+
+    .quote-container {
+        margin: 0 1vw;
+    }
+
+    .quote-content h1 {
+        font-size: 3rem;
+        margin-top: -18vh;
+    }
+
+    .author {
+        font-size: 1rem;
+    }
+
+    .content p {
+
+        margin: auto;
+        text-align: center;
+    }
+
+    #moto {
+        max-height: max-content;
+        padding-top: 10vh;
+        justify-content: normal;
+    }
+
+    .product {
+
+        width: 80vw;
+        margin: 0 auto;
+
+        img {
+            width: 80vw;
+            height: auto;
+        }
+    }
+
+    #team {
+        padding: 10vh 0 0 0;
+
+
+    }
+
+    #team h1 {
+        margin-bottom: 2vh;
+    }
+
+    #contact {
+        img {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 10%;
+            width: 80vh;
+            object-fit: cover;
+            object-position: center;
+
+            transform: rotateZ(90deg);
+
+            margin-top: 10vh;
+        }
+    }
+
+    #contact h1 {
+        font-size: 4vh;
+
+    }
+}

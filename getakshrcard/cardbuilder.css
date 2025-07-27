@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
+@import url(./VCR_OSD_MONO_1.001.ttf);
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'VCR_OSD_MONO';
+    src: url('./VCR_OSD_MONO_1.001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+as {
+
+    font-size: 48px;
+    line-height: 1.2;
+    /* New change */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.8;
+
+    height: 1020px;
+    width: 645px;
+    transition: background-image 0.5s ease-in-out;
+
+    background: url(./blacks-front.png);
+    background-size: cover;
+}
+
+.top {
+    padding: 8% 0 0 10%;
+    /* New change */
+}
+
+.top .name {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.top i,
+img {
+    position: relative;
+    right: -443px;
+    height: 50px;
+    width: 50px;
+    top: 78px;
+    /* icon position */
+}
+
+.low-section .low {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    padding-left: 10% ;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    text-align: left;
+    box-sizing: border-box;
+    width: 80%;
+}
+.container {
+    position: relative; /* Ensure the container is the reference for absolute positioning */
+}
+
+.container1 {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.8;
+
+    width: 1020px;
+    height: 645px;
+
+    transition: background-image 0.5s ease-in-out;
+    /* margin-right: 5px; */
+    background: url(./Blacks-Back.png);
+    background-size: cover;
+    text-align: right;
+
+}
+
+
+.top1 {
+    position: relative;
+    top: 51px;
+    padding-right:20px ;
+    text-align: right;
+}
+
+.top p {
+    width: 400px;
+    word-wrap: break-word;
+
+    margin: 0;
+}
+
+.top1 p {
+    width: 339px;
+    word-wrap: break-word;
+    width: 100%;
+    margin: 0;
+}
+
+.top1 .name {
+    font-size: larger;
+    font-weight: 600;
+    width: 100%;
+}
+
+.low-section1 .low1 {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    padding-left: 10% ;
+    width: 100%;
+    font-size: 24px;
+    text-align: right;
+    box-sizing: border-box;
+    width: 80%;
+}
+.container1 {
+    position: relative; /* Ensure the container is the reference for absolute positioning */
+}
+
+#desingation {
+
+    font-size: 32px;
+    /* New change */
+    font-weight: 600;
+    /* New change */
+}
+
+#desingation1 {
+
+    font-size: 32px;
+    font-weight: 600;
+
+}

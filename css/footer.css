@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+/* footer */
+.footer {
+    padding:  20px; 
+    
+    background: var(--Surface-Neutral-Black);
+    font-family: Syne;
+
+    h2 {
+        color: var(--Text-Disabled);
+        font-family: Syne;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+.footeritems {
+    padding: 2vh 0;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 0 auto;
+
+}
+
+.footeritems li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--Text-OnPrimary);
+    font-family: Syne;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4vh;
+
+}
+
+.copyright{
+    color: var(--Text-OnPrimary);
+    font-family: Syne;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4vh;
+}
+
+.footer-placeholder a:hover {
+    list-style: none;
+    text-decoration: underline;
+    color: var(--Text-OnPrimary);
+    font-family: Syne;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4vh;
+
+}
+
+.footer-item {
+    color: var(--Text-OnPrimary);
+    text-align: left;
+}
+
+.footer-bottom {
+    color: var(--Text-OnPrimary);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer-bottom img {
+    width: 5.6rem;
+}
+.footeritems>:nth-child(5) {
+    li{
+            color: var(--Text-OnPrimary);
+
+    }
+}
+.footer-bottom .social-icons {
+    margin-top: 10px;
+    color: var(--Icon-OnPrimary);
+}
+
+.footer-bottom .social-icons a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: var(--Icon-OnPrimary);
+
+}
+.hr{
+    border: 1px solid var(--Icon-Default);
+    margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+  
+    /* footer */
+    .footer {
+        padding: 0;
+        font-size: medium;
+    }
+
+    .footer-item {
+        padding: 0;
+    }
+
+    .footeritems {
+
+
+        grid-template-columns: repeat(2, 40%);
+        line-height: 5vh;
+
+    }
+
+    .footeritems>:nth-child(5) {
+        width: 80vw;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        line-height: 5vh;
+    }
+
+    .footer-bottom img {
+        width: 5.6rem;
+    }
+    }

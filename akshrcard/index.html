@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkshrCard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://akshr.in/css/Colors.css">
+    <link rel="stylesheet" href="./container_1_radio.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+
+<body>
+    <!-- Top section (initially visible) -->
+    <div class="container home">
+        <div>
+            <div class="firstcolumn">
+                <p style="margin-block-end: 0;">Get your</p>
+                <p class="akshrcard" style="margin-block-end: 1vw;">#AkshrCard</p>
+                <p class="heading">The NFC-Enabled Smart Card for every professional!</p><br><br>
+                <button onclick="window.location.href='https://akshr.in/getakshrcard'">I want this!</button>
+            </div>
+        </div>
+        <div>
+            <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fhome_section.webp?alt=media&token=1043effc-9338-41e5-80d7-ba450d2ca3a6"
+                alt="Akshr Card section">
+        </div>
+    </div>
+
+    <!-- Second section (visible until the user scrolls) -->
+    <div class="container cardsonhands" style="background-color: #ffffff;">
+        <div>
+            <h1 class="heading">Make a<br>Lasting Impression</h1>
+            <p>Introducing yourself has never been this seamless. With AkshrCard, a simple tap of your card on someone's
+                phone opens up a world of possibilities. Leave a lasting impression at conferences, meetings, or any
+                networking event.</p>
+        </div>
+        <div>
+            <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards_on_hand.webp?alt=media&token=bc197d9a-8f08-44d3-8858-fba1626cbcbc"
+                alt="Cards on hand" class="hideInMobile">
+            <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2F1234.webp?alt=media&token=9373a477-6e4c-4b19-b9fd-129e28ac1bdb"
+                class="showInMobile" class="" alt="">
+        </div>
+    </div>
+
+
+    <div class="container bottom-section card_customization" hidden>
+        <div
+            style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; margin: 0 auto; width: fit-content;">
+            <h1 class="heading">Show your Akshr</h1>
+            <p>Its your card, give it your style.</p>
+            <div class="design-inputs grid">
+                <label for="option1" class="radio vertex">
+                    <input type="radio" checked name="design" id="option1" class="colorbutton" data-color="white"
+                        data-image="image1.webp"
+                        data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex.webp?alt=media&token=fe35ec23-b64e-492b-aba3-a1b279b18463"
+                        data-name="Vertex">
+                    <div class="custom-radio" style="background: black; background-repeat: no-repeat;"></div>
+                    Vertex
+                </label>
+
+                <label for="design2" class="radio pulse">
+                    <input type="radio" name="design" id="design2" class="colorbutton" data-color="white"
+                        data-image="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fbackground%2Fimage3.webp?alt=media&token=c5239ca6-6c17-452a-8cf2-ec6dd4f01a48"
+                        data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FPulse.webp?alt=media&token=ee2fffa2-b7c9-40c9-9e01-97634c5886ae">
+                    <div class="custom-radio"
+                        style="background: linear-gradient(61deg, #7B10C2 31.03%, #D6227B 68.74%, #FFC83A 91.34%); background-repeat: no-repeat;">
+                    </div>
+                    Pulse
+                </label>
+
+                <label for="design3" class="radio phantom">
+                    <input type="radio" name="design" id="design3" class="colorbutton"
+                        data-color="linear-gradient(139deg, #000 11.59%, #8F8F8F 79.15%)"
+                        data-image="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fbackground%2Fimage2.webp?alt=media&token=b29ac0a4-748c-4c69-9b32-b43e36a62970"
+                        data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FPhantom.webp?alt=media&token=7ac4cd77-55a4-4291-b68b-71d3833d8b02">
+                    <div class="custom-radio"
+                        style="background: linear-gradient(139deg, #000 11.59%, #8F8F8F 79.15%); background-repeat: no-repeat;">
+                    </div>
+                    Phantom
+                </label>
+
+                <label for="design4" class="radio matrix">
+                    <input type="radio" data-name="Matrix" name="design" id="design4" class="colorbutton"
+                        data-color="linear-gradient(139deg, #000 11.59%, #007D3B 79.15%)"
+                        data-image="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fbackground%2Fimage4.webp?alt=media&token=3869d486-a209-4e04-9c7d-8cba37652081"
+                        data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FMatrix.webp?alt=media&token=a2707734-eec6-49ff-bd28-4f01f229b1a4">
+                    <div class="custom-radio"
+                        style="background: linear-gradient(139deg, #000 11.59%, #007D3B 79.15%); background-repeat: no-repeat;">
+                    </div>
+                    Matrix
+                </label>
+            </div>
+            <div id="more_options">
+                <br> <br>
+                <label for="">Chose color :</label>
+                <div class="design-inputs">
+                    <label for="classic" class="color-label">
+                        <input type="radio" checked name="vertex" style="background-color: #000000;" id="classic"
+                            class="colorbutton"
+                            data-color="white" data-image="image1.webp"
+                            data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex.webp?alt=media&token=fe35ec23-b64e-492b-aba3-a1b279b18463">
+                    </label>
+                    <label for="akshr" class="color-label">
+                        <input type="radio" name="vertex" style="background-color: #1863aa;" id="akshr"
+                            class="colorbutton blue"
+                            data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex_akshr.png?alt=media&token=1f8f346f-ea0c-4e37-aad5-c97c1d4b5253"
+                            data-color="white" data-image="image1.webp">
+                    </label>
+                    <label for="peace" class="color-label peace">
+                        <input type="radio" name="vertex"
+                            style="background-color: #ffffff; border-color: #d4d4d4; border-width: 2px;" id="peace"
+                            class="colorbutton" data-color="white" data-image="image1.webp"
+                            data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex_peace.png?alt=media&token=be793a14-6bd9-420d-affa-7ac50868b5a4">
+                    </label>
+                </div>
+                <style>
+          
+                .color-label input[type="radio"]:checked + span,
+                .color-label input[type="radio"]:checked {
+                    /* Add both inner and outer border when selected */
+                    box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--outer-border, #000);
+                    border-color: var(--outer-border, #000);
+                }
+                /* Set outer border color for each label */
+                .color-label[for="classic"] input[type="radio"]:checked {
+                    --outer-border: #000;
+                }
+                .color-label[for="akshr"] input[type="radio"]:checked {
+                    --outer-border: #1863aa;
+                }
+                .color-label[for="peace"] input[type="radio"]:checked {
+                    --outer-border: #d4d4d4;
+                }
+                </style>
+                <script>
+                // Add JS to update label shadow on selection for browsers that don't support :has()
+                document.querySelectorAll('.color-label input[type="radio"]').forEach(function(radio) {
+                    radio.addEventListener('change', function() {
+                        document.querySelectorAll('.color-label').forEach(function(label) {
+                            label.style.boxShadow = 'none';
+                        });
+                        if (radio.checked) {
+                            let outer = '';
+                            if (radio.id === 'classic') outer = '#000';
+                            if (radio.id === 'akshr') outer = '#1863aa';
+                            if (radio.id === 'peace') outer = '#d4d4d4';
+                        }
+                    });
+                });
+                // Set initial shadow
+                </script>
+            </div>
+        </div>
+        <div class="Card_preview">
+            <img id="image-display"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex.webp?alt=media&token=fe35ec23-b64e-492b-aba3-a1b279b18463"
+                style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); ">
+        </div>
+    </div>
+    <div class="interaction">
+        <div class="iframe_container">
+            <div class="phone-frame">
+                <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2FiPhone%20Frame.svg?alt=media&token=d0112368-b3f9-4ea1-8a25-50e95a2e514d"
+                    alt="Phone Frame" class="phone-frame-image">
+
+                <iframe
+                    data-src=" https://card.akshr.in/?cardid=5xhVp1NiC2UP0Wq3ykq5AgRPyYY21749372778081"
+                    frameborder="0"></iframe>
+
+            </div>
+
+        </div>
+        <!-- need to add impage -->
+        <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2FInteraction%20hands.png?alt=media&token=d40e9885-5045-44ec-a70a-371082a48d1b"
+            class="hands" alt="">
+        <div>
+
+        </div>
+    </div>
+    <div class="container hands">
+        <h1>The touch that <br>connects </h1>
+        <img class="hands hideInMobile"
+            src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2FHands%20Desktop.webp?alt=media&token=94c7bed0-b601-4b45-b7e6-5a68fdd5da9b"
+            mob alt="">
+        <img class="hands showInMobile"
+            src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2FHands%20Mobile.webp?alt=media&token=9973ab44-0c83-4e84-b868-834c4a8ce301"
+            mob alt="">
+
+        <p class="text">
+            Bridging the gap between tradition and innovation, AkshrCard replaces outdated business cards with a modern,
+            seamless connection.
+        </p>
+    </div>
+    <!-- Applications Container -->
+    <div class="container applications">
+        <div class="application">
+            <h2 class="hideInMobile">Before</h2>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fpilesofcards.webp?alt=media&token=044d11e5-4829-4868-b1a9-ec716a4c2bb5"
+                    alt="">
+                <p class="description">
+                    <as class="showInMobile">Before</as>
+
+                    A pile of business cards,which no one's gonna look afterwards.
+                </p>
+            </div>
+
+        </div>
+        <div class="application">
+            <h2 class="hideInMobile">After</h2>
+            <div class="card order-reverse">
+                <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fafter.webp?alt=media&token=3539deb8-92f5-4a4f-8ede-2ac7e4914d82"
+                    alt="">
+                <p class="description">
+                    <as class="showInMobile">After</as>
+
+                    Your Akshr Card letting you connect seamlessly with just a tap.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Order now container -->
+    <div class="container ordernow">
+        <div style="padding-top: 10vh;">
+            <h1>Get your Akshr</h1>
+            <p>Leave a lasting impression with just a click.</p>
+            <button onclick="window.location.href='https://akshr.in/getakshrcard'">
+                Order Now
+            </button>
+        </div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fabovefooter.webp?alt=media&token=f4ce4edc-9f85-4182-9063-a9c38ca8de1d"
+            alt="">
+
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://akshr.in/javascript/footer.js"></script>
+
+</body>
+
+</html>

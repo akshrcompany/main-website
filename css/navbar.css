@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Fixed Navigation Bar */
+.navbar {
+    
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+    font-family: Syne;
+    display: flex;
+    align-items: center;
+    /* Vertically center items */
+    position: fixed;
+    justify-content: space-between;
+    border-bottom: white 1px solid;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s;
+
+}
+
+.nav-links {
+    margin-right: 10px;
+    padding: 0 10px;
+    color: #3F3F3F;
+    float: right;
+
+    font-weight: 400;
+}
+
+/* Logo */
+.navbar img {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    float: left;
+    height: 4vh;
+}
+
+/* Navigation Links */
+.navbar a {
+    float: left;
+    color: var(--Text-Primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    display: block;
+    text-align: center;
+    padding: 24px 16px;
+    border-bottom: transparent 4px solid;
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    color: black;
+border-bottom: var(--blue-600) solid 4px;
+border-radius: 2%;
+font-size: large;
+text-decoration: none;
+}
+
+
+.hamburger-menu {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 5px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -5px);
+}
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.navbar.white-bg {
+    background-color: white;
+    height: 100%;
+    /* Set your desired background color */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Hide navbar by default */
+.navbar {
+    display: none;
+}
+
+/* Show navbar when the "visible" class is present */
+.navbar.visible {
+    display: inline;
+
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .navbar img {
+        padding: 5%;
+        position: static;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        float: none;
+        
+
+    }
+
+        .nav-links.show {
+            display: flex;
+            margin-top: 10vh;
+            height: 100vh;
+            width: 100;
+            
+
+        }
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-links {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links.show {
+  display: flex;
+  margin-top: 2vh;
+  height: 100vh;
+  width: 100%;
+  animation: slideFadeIn 0.4s ease forwards;
+}
+
+    .hamburger-menu {
+        padding: 1vh;
+        display: block;
+        position: absolute;
+        right: 4vw;
+    }
+
+    .navbar a {
+    font-size: x-large;
+}
+ .navbar a:hover{
+    font-size: x-large;
+}
+
+.navbar a:hover {
+    color: black;
+border-bottom: none;
+}
+
+.nav-links{
+    padding: 5%;
+}
+.navbarholder{
+    display: inline-flex;
+    align-items: center;
+    padding: 2vh;
+}
+}

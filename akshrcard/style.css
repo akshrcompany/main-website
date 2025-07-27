@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/* Container with minimum height of 100vh */
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: Syne;
+    text-align: center;
+    font-size: large;
+
+}
+
+.showInMobile {
+    display: none;
+}
+
+/* Container with minimum height of 100vh */
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Default to two columns */
+}
+
+/* Centering content inside the div */
+.container>div {
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+/* Home class with background gradient */
+.home {
+    background: linear-gradient(109deg, #000 0.39%, #323232 100%);
+    color: #ffffff;
+}
+
+/* Ensure p tags and buttons are on new lines */
+.home p {
+    display: block;
+    font-size: 3vh;
+    font-family: syne;
+    line-height: 2rem;
+    margin-block: 0;
+
+}
+
+.home .heading {
+
+    text-align: left;
+    font-family: Syne;
+    font-size: 2.5vh;
+
+}
+
+.home .akshrcard {
+    color: #FFF;
+    text-align: left;
+    font-family: Syne;
+    font-size: 8vh;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.home img {
+    width: 100%;
+    padding-right: 8vw;
+}
+
+.home button {
+    background-color: transparent;
+    color: var(--Text-OnPrimary);
+    display: inline-flex;
+    padding: 19px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Stroke-OnPrimary);
+    font-size: 1.2rem;
+    font-family: syne;
+    font-weight: 500;
+}
+.home button:hover {
+    background-color: var(--Surface-Neutral-Default);
+    color: var(--Text-Primary);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.home .firstcolumn {
+
+    text-align: left;
+
+}
+
+/* cardonhands section */
+.cardsonhands {
+    background: var(--Surface-Neutral-Hover);
+}
+
+.cardsonhands img {
+    width: 100%;
+
+}
+
+.cardsonhands p {
+    text-align: left;
+    width: 70%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 166%;
+    /* 29.88px */
+}
+
+.cardsonhands .heading {
+    font-size: xx-large;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: left;
+    word-wrap: break-word;
+    width: 70%;
+    margin-block-end: 0.5rem;
+    margin-top: -15vh;
+}
+
+
+
+/* Optional: Pinning effect for the animation section */
+.animation-section {
+    position: sticky;
+    top: 0;
+    /* Adjust if needed */
+    height: 100vh;
+    /* Ensures the section covers the viewport height */
+    z-index: 1;
+    /* Keeps it above other content */
+}
+
+/* animation-section */
+.animation-section {
+    padding-top: 10vh;
+
+    img {
+        height: 80vh;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text-holder div {
+    width: 80%;
+
+    h1 {
+        transition: all 0.7s;
+    }
+}
+
+/* card customization section */
+.card_customization {
+    background-color: var(--Surface-Neutral-Default);
+    position: relative;
+    z-index: 99;
+    transition: background-image 0.3s, color 0.3s, background-color 0.3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+
+}
+.card_customization p{
+    margin-bottom: 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 10vh);
+    grid-gap: 4vh;
+}
+
+
+.Card_preview {
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 50vh;
+    }
+}
+
+/* hands */
+.hands {
+    align-content: center;
+    grid-template-columns: none;
+    width: 100vw;
+}
+
+.hands h1 {
+    color: #1D1D1D;
+    text-align: center;
+    font-family: Syne;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: -6vh;
+}
+
+.hands .text {
+    text-align: center;
+    font-family: Syne;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1 rem;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.handsflexbox {
+    display: flexbox;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+}
+
+.hand1,
+.hand2 {
+    max-width: 30vw;
+    position: relative;
+
+}
+
+.hand1 {
+    float: left;
+}
+
+.hand2 {
+    float: right;
+}
+
+
+.cardinmiddle {
+
+    transform: rotate(90deg);
+    max-width: calc(0.50 * 30vw * 0.774891775);
+    /* Adjust size as needed */
+}
+
+@keyframes slideUp {
+    0% {
+
+        transform: translateY(-170%);
+
+    }
+
+    50% {
+        scale: 0.7;
+        transform: translateY(-50%);
+
+    }
+
+    67% {
+        scale: 0.7;
+        transform: translateY(-50%);
+
+    }
+
+    100% {
+        transform: translateY(20%);
+        scale: 1;
+    }
+}
+
+@keyframes moveDownAndFade {
+    0% {
+        transform: translateY(100%);
+        scale: 0.5;
+    }
+
+    50% {
+        transform: translateY(-85%);
+        scale: 0.65;
+        opacity: 1;
+    }
+
+    67% {
+        transform: translateY(-85%);
+        scale: 0.65;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        scale: 0.65;
+        opacity: 0;
+    }
+}
+
+/* Interactions  */
+.interaction {
+    height: 100vh;
+    width: 100%;
+
+    .iframe_container {
+        position: relative;
+        z-index: 0;
+        transform: translateY(-170%);
+        scale: 0.5;
+
+
+    }
+
+    .animate {
+
+        animation: slideUp 3s ease-in-out forwards;        animation-delay: 0.5s;
+
+
+    }
+
+    .hands {
+        position: relative;
+        z-index: 1;
+        width: 60%;
+
+    }
+
+    .hands_animation {
+        animation: moveDownAndFade 4s ease-in-out forwards;
+
+    }
+
+    iframe {
+        margin: auto;
+        width: calc(80vh * 421/852);
+        height: 80vh;
+        background-color: #000;
+
+
+    }
+
+    .phone-frame {
+        position: relative;
+        width: calc(70vh * 421/852);
+        /* Adjust width as needed */
+        height: 70vh;
+        /* Adjust height as needed */
+        margin: 0 auto;
+        /* Center the phone frame */
+    }
+
+    .phone-frame-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        /* Ensure the phone frame is above the iframe */
+        pointer-events: none;
+        /* Allow interaction with the iframe */
+    }
+
+    .phone-frame iframe {
+        position: absolute;
+        left: 4.5%;
+        top: 0;
+        /* Adjust to fit within the phone frame */
+        width: 90%;
+        /* Adjust to fit within the phone frame */
+        height: 99%;
+        /* Adjust to fit within the phone frame */
+        z-index: 1;
+        /* Ensure the iframe is below the phone frame */
+        border: none;
+        border-radius: 4vh;
+    }
+}
+
+/* Applications */
+.applications {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.applications .card {
+    position: relative;
+
+}
+
+.applications img {
+    position: relative;
+    height: 60vh;
+    z-index: 23;
+}
+
+.applications .description {
+    position: absolute;
+    top: 40%;
+    line-height: 150%;
+width: 75%;
+left: 10%;
+margin: 0 auto;    z-index: 0;
+}
+
+.applications img:hover {
+
+    opacity: 10%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Order now Section  */
+
+.ordernow {
+    display: block;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: large;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+
+    img {
+        height: 50vh;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    h1 {
+        color: #000;
+        font-family: Syne;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    p {
+        text-align: center;
+        width: 70%;
+        color: var(--neutral-800);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 166%;
+        margin-top: -2vh;
+        margin-bottom: 6vh;
+    }
+
+
+    button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Syne;
+        background: none;
+        font-weight: 500;
+        font-size: large;
+        padding: 2vh 3vh;
+        background-color: white;
+        border-radius: 1vh;
+        border: 1px solid #000;
+    }
+
+    button:active {
+        background-color: #000;
+        color: white;
+
+
+    }
+}
+
+
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100vw;
+    }
+
+    .hideInMobile {
+        display: none;
+    }
+
+    .showInMobile {
+        display: block;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        /* Switch to one column */
+        grid-template-rows: 1fr 1fr;
+        /* Two rows */
+
+    }
+
+    .container[class*="home"] {
+        min-height: 50vh;
+    }
+
+    .home .firstcolumn {
+        margin-top: 10vh;
+        text-align: center;
+
+    }
+
+    .home .akshrcard {
+        text-align: center;
+        font-size: 6vh;
+    }
+
+    .home p {
+        display: block;
+        font-size: 3vh;
+        font-family: syne;
+        color: #c2c2c2;
+        line-height: 2rem;
+
+    }
+
+    .home .heading {
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .home img {
+        width: 90%;
+        margin: auto;
+        position: absolute;
+        margin-top: 15vh;
+    }
+
+    .cardsonhands p {
+        text-align: center;
+    }
+
+    .cardsonhands .heading {
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 50px);
+    }
+
+    .Card_preview {
+        margin: auto;
+    }
+
+    .Card_preview img {
+        margin-bottom: 5vh;
+
+        margin-top: -25vh;
+    }
+
+    /* animation */
+
+    .animation-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* hands */
+    .hands {
+        align-content: center;
+        grid-template-columns: none;
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        grid-template-rows:none;
+        /* This will prevent overflow */
+
+    }
+
+    .hands .text {
+        margin-top: 20vh;
+        width: 70%;
+    }
+
+    .handsflexbox {
+        position: relative;
+        width: 100vw;
+
+    }
+
+    .hand1 {
+        position: absolute;
+        top: 10%;
+        left: -4%;
+
+        transform: rotate(45deg);
+
+    }
+.interaction{
+    .grid{
+        display: grid;
+    }
+    .hands{
+        width: 100vw;
+    }
+
+}
+    .cardinmiddle {
+        position: relative;
+
+        transform: rotate(315deg);
+        top: 50%;
+
+        max-width: 30vw;
+    }
+
+    .hand2 {
+        position: absolute;
+        top: 90%;
+        bottom: 10%;
+        right: -2%;
+        transform: rotate(45deg);
+        overflow: hidden;
+        /* This will trim off the extra part */
+
+    }
+
+    .hands h1 {
+        color: #1D1D1D;
+        display: flex;
+        text-align: left;
+        font-family: Syne;
+        font-size: 4vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-left: 20%;
+        margin-bottom: -24vh;
+
+
+    }
+
+    .hands .text {
+        font-family: Syne;
+        font-style: normal;
+        font-weight: 400;
+        text-align: right;
+        line-height: 150%;
+        font-size: 1rem;
+        max-width: 40%;
+        margin: 0 50%;
+        margin-top: -4vh;
+        margin-top: -24vh;
+
+    }
+
+    /* Applications */
+
+    .applications {
+        display: block;
+        width: 80%;
+        margin-top: 30vh;
+        min-height: min-content;
+        grid-template-rows: 0.5fr 0fr;
+        padding-bottom: 30vh;
+
+        div {
+            height: max-content;
+            margin-top: 3vh;
+        }
+
+        as {
+            font-weight: bolder;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 30px;
+            text-align: left;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+
+        }
+
+        img:hover {
+            opacity: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        .description {
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+
+        .order-reverse {
+            flex-flow: row-reverse;
+        }
+    }
+
+
+    /* ordernow */
+
+    .ordernow {
+        min-height: max-content;
+        display: flex;
+        font-size: medium;
+        padding-bottom: 30vh;
+
+    }
+
+    .ordernow img {
+        width: 90%;
+        height: auto;
+    }
+    @keyframes moveDownAndFade {
+    0% {
+        transform: translateY(100%);
+        scale: 1;
+    }
+
+    50% {
+        transform: translateY(-60%);
+        scale: 1.2;
+        opacity: 1;
+    }
+
+    67% {
+        transform: translateY(-60%);
+        scale: 1.2;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        scale: 0.9;
+        opacity: 0;
+    }
+}
+
+}
+
+
+.ordernow button:hover{
+    filter: invert(100%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    }
