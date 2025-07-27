@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Akshr Card</title>
+    <link rel="stylesheet" href="https://akshr.in/css/footer.css">
+    <link rel="stylesheet" href="./akshrcard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/components.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container_1_radio.css">
+    <link rel="stylesheet" href="../css/Colors.css">
+
+</head>
+
+<body>
+
+    <div class="progress-bar">
+        <div class="progress-labels">
+            <!-- STEP 1 -->
+            <div class="step" id="step1">
+                <!-- Disabled icon (grey SVG) -->
+                <span class="icon-disabled" style="display:none;">
+                    <img src="" /> </span>
+                <!-- Active icon (blue SVG) -->
+                <span class="icon-active" style="display:none;">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2F1%20Active.svg?alt=media&token=af38bd86-a255-4162-8abb-906841877f62" />
+                </span>
+                <!-- Completed icon (tick) -->
+                <span class="icon-completed" style="display:none;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Ftick.svg?alt=media&token=8bf47bff-bb56-4a6a-89a2-0d7898be34c3"
+                        alt="Completed" />
+                </span>
+                Design
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step" id="step2">
+                <span class="icon-disabled" style="display:none;">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2F2%20Default.svg?alt=media&token=7348fdaa-6b29-4eb6-b370-354ac34f3526" />
+                </span>
+                <span class="icon-active" style="display:none;">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2F2%20Active.svg?alt=media&token=92d20207-3708-4bb0-affd-0adc21ce39b1" />
+                </span>
+                <span class="icon-completed" style="display:none;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Ftick.svg?alt=media&token=8bf47bff-bb56-4a6a-89a2-0d7898be34c3"
+                        alt="Completed" />
+                </span>
+                Details
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step" id="step3">
+                <span class="icon-disabled" style="display:none;">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2F3%20Default.svg?alt=media&token=58c9508d-97fb-4421-92f8-88fa46dfe2ac" />
+                </span>
+                <span class="icon-active" style="display:none;">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2F3%20Active.svg?alt=media&token=db16c8e2-9dcf-48f8-8303-dea4c47cf78c" />
+                </span>
+                <span class="icon-completed" style="display:none;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Ftick.svg?alt=media&token=8bf47bff-bb56-4a6a-89a2-0d7898be34c3"
+                        alt="Completed" />
+                </span>
+                Account
+            </div>
+        </div>
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+    </div>
+
+    <div id="offers"  class="fixed-bottom-bar">
+        <div class="left-section">
+            <span style="color: white;">
+                <i class="fa fa-circle-check" style="margin-right: 6px;"></i>
+            </span>
+            <p>
+
+                We've applied the code '<b>AKSHR20</b>' for you—enjoy 20% off!
+            </p></span>
+        </div>
+        <div class="right-section" style="    padding-top: 20px;">
+            <p> <span style="font-size: xx-large;text-align: right;
+    display: inline-flex
+;flex-direction: column;">
+                    <B id="shown_amount">₹400</B>
+                    <span style="font-size: small;">Subtotal</span></span> <br>
+
+                <br>
+            </p>
+        </div>
+    </div>
+    <div id="container6" class="container " data-step="2">
+        <dialog id="invalid_size">
+            <div class="heading">
+                <h3>Upload Failed</h3>
+                <i class="fa-solid fa-times" onclick="document.getElementById('invalid_size').close();"></i>
+            </div>
+
+            <div class="" style="width: 90%; margin: auto;">
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FerrorIcon.webp?alt=media&token=bbcb5e31-6a4d-40a2-b76b-d0defef42fb8"
+                        alt="Error icon">
+                </div>
+                <div>
+                    <h3 style="color: #B42318;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                            viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3132)">
+                                <path
+                                    d="M10 15.5C10.2833 15.5 10.521 15.404 10.713 15.212C10.905 15.02 11.0007 14.7827 11 14.5C10.9993 14.2173 10.9033 13.98 10.712 13.788C10.5207 13.596 10.2833 13.5 10 13.5C9.71667 13.5 9.47933 13.596 9.288 13.788C9.09667 13.98 9.00067 14.2173 9 14.5C8.99933 14.7827 9.09533 15.0203 9.288 15.213C9.48067 15.4057 9.718 15.5013 10 15.5ZM10 11.5C10.2833 11.5 10.521 11.404 10.713 11.212C10.905 11.02 11.0007 10.7827 11 10.5V6.5C11 6.21667 10.904 5.97933 10.712 5.788C10.52 5.59667 10.2827 5.50067 10 5.5C9.71733 5.49933 9.48 5.59533 9.288 5.788C9.096 5.98067 9 6.218 9 6.5V10.5C9 10.7833 9.096 11.021 9.288 11.213C9.48 11.405 9.71733 11.5007 10 11.5ZM10 20.5C8.61667 20.5 7.31667 20.2373 6.1 19.712C4.88334 19.1867 3.825 18.4743 2.925 17.575C2.025 16.6757 1.31267 15.6173 0.788001 14.4C0.263335 13.1827 0.000667933 11.8827 1.26582e-06 10.5C-0.000665401 9.11733 0.262001 7.81733 0.788001 6.6C1.314 5.38267 2.02633 4.32433 2.925 3.425C3.82367 2.52567 4.882 1.81333 6.1 1.288C7.318 0.762667 8.618 0.5 10 0.5C11.382 0.5 12.682 0.762667 13.9 1.288C15.118 1.81333 16.1763 2.52567 17.075 3.425C17.9737 4.32433 18.6863 5.38267 19.213 6.6C19.7397 7.81733 20.002 9.11733 20 10.5C19.998 11.8827 19.7353 13.1827 19.212 14.4C18.6887 15.6173 17.9763 16.6757 17.075 17.575C16.1737 18.4743 15.1153 19.187 13.9 19.713C12.6847 20.239 11.3847 20.5013 10 20.5Z"
+                                    fill="#B42318" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3132">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Image size too big</h3>
+                    <p>The uploaded image exceeds the 1 MB file size limit. Please upload a
+                        high-resolution JPG or PNG
+                        file under 1 MB.</p>
+
+
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3138)">
+                                <path
+                                    d="M7.663 15.5H12.336M10 1.5V2.5M16.364 4.136L15.657 4.843M19 10.5H18M2 10.5H1M4.343 4.843L3.636 4.136M6.464 14.036C5.76487 13.3367 5.2888 12.4458 5.09598 11.4759C4.90316 10.506 5.00225 9.50076 5.38073 8.58721C5.75921 7.67366 6.40007 6.89284 7.22229 6.34349C8.0445 5.79414 9.01115 5.50093 10 5.50093C10.9889 5.50093 11.9555 5.79414 12.7777 6.34349C13.5999 6.89284 14.2408 7.67366 14.6193 8.58721C14.9977 9.50076 15.0968 10.506 14.904 11.4759C14.7112 12.4458 14.2351 13.3367 13.536 14.036L12.988 14.583C12.6745 14.8962 12.4259 15.2682 12.2564 15.6776C12.0868 16.087 11.9997 16.5259 12 16.969V17.5C12 18.0304 11.7893 18.5391 11.4142 18.9142C11.0391 19.2893 10.5304 19.5 10 19.5C9.46957 19.5 8.96086 19.2893 8.58579 18.9142C8.21071 18.5391 8 18.0304 8 17.5V16.969C8 16.074 7.644 15.215 7.012 14.583L6.464 14.036Z"
+                                    stroke="#F79009" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3138">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Tip</h3>
+                    <p>Use online image compressors or export your design with optimized
+                        settings to reduce file size
+                        without losing quality.</p>
+                </div>
+
+            </div><span>
+                <button class=".button"
+                    onclick="document.getElementById('invalid_size').close();document.getElementById('frontimage').click()">Try
+                    Again</button>
+            </span>
+        </dialog>
+        <dialog id="invalid_type">
+            <div class="heading">
+                <h3>Upload Failed</h3>
+                <i class="fa-solid fa-times" onclick="document.getElementById('invalid_type').close();"></i>
+            </div>
+
+            <div class="" style="width: 90%; margin: auto;">
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FerrorIcon.webp?alt=media&token=bbcb5e31-6a4d-40a2-b76b-d0defef42fb8"
+                        alt="Error icon">
+                </div>
+                <div>
+                    <h3 style="color: #B42318;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                            viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3132)">
+                                <path
+                                    d="M10 15.5C10.2833 15.5 10.521 15.404 10.713 15.212C10.905 15.02 11.0007 14.7827 11 14.5C10.9993 14.2173 10.9033 13.98 10.712 13.788C10.5207 13.596 10.2833 13.5 10 13.5C9.71667 13.5 9.47933 13.596 9.288 13.788C9.09667 13.98 9.00067 14.2173 9 14.5C8.99933 14.7827 9.09533 15.0203 9.288 15.213C9.48067 15.4057 9.718 15.5013 10 15.5ZM10 11.5C10.2833 11.5 10.521 11.404 10.713 11.212C10.905 11.02 11.0007 10.7827 11 10.5V6.5C11 6.21667 10.904 5.97933 10.712 5.788C10.52 5.59667 10.2827 5.50067 10 5.5C9.71733 5.49933 9.48 5.59533 9.288 5.788C9.096 5.98067 9 6.218 9 6.5V10.5C9 10.7833 9.096 11.021 9.288 11.213C9.48 11.405 9.71733 11.5007 10 11.5ZM10 20.5C8.61667 20.5 7.31667 20.2373 6.1 19.712C4.88334 19.1867 3.825 18.4743 2.925 17.575C2.025 16.6757 1.31267 15.6173 0.788001 14.4C0.263335 13.1827 0.000667933 11.8827 1.26582e-06 10.5C-0.000665401 9.11733 0.262001 7.81733 0.788001 6.6C1.314 5.38267 2.02633 4.32433 2.925 3.425C3.82367 2.52567 4.882 1.81333 6.1 1.288C7.318 0.762667 8.618 0.5 10 0.5C11.382 0.5 12.682 0.762667 13.9 1.288C15.118 1.81333 16.1763 2.52567 17.075 3.425C17.9737 4.32433 18.6863 5.38267 19.213 6.6C19.7397 7.81733 20.002 9.11733 20 10.5C19.998 11.8827 19.7353 13.1827 19.212 14.4C18.6887 15.6173 17.9763 16.6757 17.075 17.575C16.1737 18.4743 15.1153 19.187 13.9 19.713C12.6847 20.239 11.3847 20.5013 10 20.5Z"
+                                    fill="#B42318" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3132">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Unsupported File type</h3>
+                    <p>The file format is not supported.Please upload a .JPG, .PNG, or .WEBP file.</p>
+
+
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3138)">
+                                <path
+                                    d="M7.663 15.5H12.336M10 1.5V2.5M16.364 4.136L15.657 4.843M19 10.5H18M2 10.5H1M4.343 4.843L3.636 4.136M6.464 14.036C5.76487 13.3367 5.2888 12.4458 5.09598 11.4759C4.90316 10.506 5.00225 9.50076 5.38073 8.58721C5.75921 7.67366 6.40007 6.89284 7.22229 6.34349C8.0445 5.79414 9.01115 5.50093 10 5.50093C10.9889 5.50093 11.9555 5.79414 12.7777 6.34349C13.5999 6.89284 14.2408 7.67366 14.6193 8.58721C14.9977 9.50076 15.0968 10.506 14.904 11.4759C14.7112 12.4458 14.2351 13.3367 13.536 14.036L12.988 14.583C12.6745 14.8962 12.4259 15.2682 12.2564 15.6776C12.0868 16.087 11.9997 16.5259 12 16.969V17.5C12 18.0304 11.7893 18.5391 11.4142 18.9142C11.0391 19.2893 10.5304 19.5 10 19.5C9.46957 19.5 8.96086 19.2893 8.58579 18.9142C8.21071 18.5391 8 18.0304 8 17.5V16.969C8 16.074 7.644 15.215 7.012 14.583L6.464 14.036Z"
+                                    stroke="#F79009" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3138">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Tip</h3>
+                    <p>Use free online file converters like CloudConvert, ILoveIMG, or Convertio to change your file
+                        format easily.</p>
+                </div>
+
+            </div><span>
+                <button class=".button"
+                    onclick="document.getElementById('invalid_type').close();document.getElementById('frontimage').click()">Try
+                    Again</button>
+            </span>
+        </dialog>
+        <dialog id="invalid_dpi">
+            <div class="heading">
+                <h3>Upload Failed</h3>
+                <i class="fa-solid fa-times" onclick="document.getElementById('invalid_dpi').close()"></i>
+            </div>
+
+            <div class="" style="width: 90%; margin: auto;">
+                <div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FerrorIcon.webp?alt=media&token=bbcb5e31-6a4d-40a2-b76b-d0defef42fb8"
+                        alt="Error icon">
+                </div>
+                <div>
+                    <h3 style="color: #B42318;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                            viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3132)">
+                                <path
+                                    d="M10 15.5C10.2833 15.5 10.521 15.404 10.713 15.212C10.905 15.02 11.0007 14.7827 11 14.5C10.9993 14.2173 10.9033 13.98 10.712 13.788C10.5207 13.596 10.2833 13.5 10 13.5C9.71667 13.5 9.47933 13.596 9.288 13.788C9.09667 13.98 9.00067 14.2173 9 14.5C8.99933 14.7827 9.09533 15.0203 9.288 15.213C9.48067 15.4057 9.718 15.5013 10 15.5ZM10 11.5C10.2833 11.5 10.521 11.404 10.713 11.212C10.905 11.02 11.0007 10.7827 11 10.5V6.5C11 6.21667 10.904 5.97933 10.712 5.788C10.52 5.59667 10.2827 5.50067 10 5.5C9.71733 5.49933 9.48 5.59533 9.288 5.788C9.096 5.98067 9 6.218 9 6.5V10.5C9 10.7833 9.096 11.021 9.288 11.213C9.48 11.405 9.71733 11.5007 10 11.5ZM10 20.5C8.61667 20.5 7.31667 20.2373 6.1 19.712C4.88334 19.1867 3.825 18.4743 2.925 17.575C2.025 16.6757 1.31267 15.6173 0.788001 14.4C0.263335 13.1827 0.000667933 11.8827 1.26582e-06 10.5C-0.000665401 9.11733 0.262001 7.81733 0.788001 6.6C1.314 5.38267 2.02633 4.32433 2.925 3.425C3.82367 2.52567 4.882 1.81333 6.1 1.288C7.318 0.762667 8.618 0.5 10 0.5C11.382 0.5 12.682 0.762667 13.9 1.288C15.118 1.81333 16.1763 2.52567 17.075 3.425C17.9737 4.32433 18.6863 5.38267 19.213 6.6C19.7397 7.81733 20.002 9.11733 20 10.5C19.998 11.8827 19.7353 13.1827 19.212 14.4C18.6887 15.6173 17.9763 16.6757 17.075 17.575C16.1737 18.4743 15.1153 19.187 13.9 19.713C12.6847 20.239 11.3847 20.5013 10 20.5Z"
+                                    fill="#B42318" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3132">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Poor Image Quality</h3>
+                    <p>The image quality is too low.Please upload a high-resolution image at high-resolution for
+                        acceptable print quality.</p>
+
+
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <g clip-path="url(#clip0_2760_3138)">
+                                <path
+                                    d="M7.663 15.5H12.336M10 1.5V2.5M16.364 4.136L15.657 4.843M19 10.5H18M2 10.5H1M4.343 4.843L3.636 4.136M6.464 14.036C5.76487 13.3367 5.2888 12.4458 5.09598 11.4759C4.90316 10.506 5.00225 9.50076 5.38073 8.58721C5.75921 7.67366 6.40007 6.89284 7.22229 6.34349C8.0445 5.79414 9.01115 5.50093 10 5.50093C10.9889 5.50093 11.9555 5.79414 12.7777 6.34349C13.5999 6.89284 14.2408 7.67366 14.6193 8.58721C14.9977 9.50076 15.0968 10.506 14.904 11.4759C14.7112 12.4458 14.2351 13.3367 13.536 14.036L12.988 14.583C12.6745 14.8962 12.4259 15.2682 12.2564 15.6776C12.0868 16.087 11.9997 16.5259 12 16.969V17.5C12 18.0304 11.7893 18.5391 11.4142 18.9142C11.0391 19.2893 10.5304 19.5 10 19.5C9.46957 19.5 8.96086 19.2893 8.58579 18.9142C8.21071 18.5391 8 18.0304 8 17.5V16.969C8 16.074 7.644 15.215 7.012 14.583L6.464 14.036Z"
+                                    stroke="#F79009" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2760_3138">
+                                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>Tip</h3>
+                    <p>Use an online image quality enhancer to verify and improve your image before
+                        uploading.</p>
+                </div>
+
+            </div><span>
+                <button class=".button"
+                    onclick="document.getElementById('invalid_dpi').close();document.getElementById('frontimage').click()">Try
+                    Again</button>
+            </span>
+        </dialog>
+        <div>
+            <h1><svg o class='backbutton' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                        d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                        fill="black" />
+                </svg> Upload Design</h1>
+            <p style="line-height: 1.5rem;">Upload a high-resolution images (JPG or PNG) of your design including both
+                front and back if appliable. <br>Our team will review the file and contact you if any adjustments are
+                needed.
+            </p>
+            <ul style="padding-left: 1rem;"></ul>
+            <li style="margin-bottom: 0.5rem;"><span class="status1">Maximum file size: 1 MB</span></li>
+            <li style="margin-bottom: 0.5rem;"><span class="status1">Ensure it's 3.5x2 in (8.9x5.1 cm)</span></li>
+            <li style="margin-bottom: 0.5rem;"><span class="status2">File Type: JPG, PNG , WebP</span></li>
+            <li style="margin-bottom: 0.5rem;"><span class="status3">High Quality Image: Upload a high-resolution
+                    image</span></li>
+            </ul>
+
+            <br><br>
+            <input type="checkbox" name="" id="frontSameAsBack"
+                style="width: 2.2vh; height: 2.2vh; margin-right: 1vh; accent-color: black;"
+                onchange="toggleBackBox()">Front and Back are same
+            <script>
+                function toggleBackBox() {
+                    const backBox = document.getElementById('backBox');
+                    const isChecked = document.getElementById('frontSameAsBack').checked;
+                    backBox.style.display = isChecked ? 'none' : 'flex';
+                }
+            </script>
+            design <br>
+            <button id="nextButtonForContainer" class="desktop-only">Next</button>
+        </div>
+        <div class="upload-box" style="margin-top: 2vw;">
+            <div class="box" id="frontBox" style="padding: 0 2vw;">
+                <div class="uploadicon" onclick="document.getElementById('frontimage').click()"
+                    style="cursor: pointer;">
+                    <i class="fa-solid fa-arrow-up-from-bracket" style="font-size: 2.5em; color: #1863aa;"></i>
+                    <p style="font-weight: 600; color: black; margin-bottom: 0.2rem;">Upload Front Design</p>
+                    <small style="font-weight: 400; line-height: 1rem; color: #415467;">Please upload in .jpg, .png,
+                        .webp format</small>
+                </div>
+                <input type="file" id="frontimage" accept="image/*" style="display: none;">
+                <img id="previewFront" src="" alt="Preview">
+                <div class="box_panel">
+                    <div>
+                        <h3 style="margin: 0;">Front View</h3> <br>
+                        <span id="fileName_frontside">File Name</span>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-from-bracket"
+                        onclick="document.getElementById('frontimage').click()"></i>
+
+                </div>
+            </div>
+            <div class="box" id="backBox" style="padding: 0 2vw;">
+                <div class="uploadicon" onclick="document.getElementById('backimage').click()" style="cursor: pointer;">
+                    <i class="fa-solid fa-arrow-up-from-bracket" style="font-size: 2.5em; color: #1863aa;"></i>
+                    <p style="font-weight: 600; color: black; margin-bottom: 0.2rem;">Upload Back Design</p>
+                    <small style="font-weight: 400; line-height: 1rem; color: #415467;">Please upload in .jpg, .png,
+                        .webp format</small>
+                </div>
+                <input type="file" id="backimage" accept="image/*" style="display: none;">
+                <img id="previewBack" src="" alt="Preview">
+                <div class="box_panel">
+                    <div>
+                        <h3 style="margin: 0;">Back View</h3> <br>
+                        <span id="fileName_backside">File Name</span>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-from-bracket"
+                        onclick="document.getElementById('backimage').click()"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="mobile-only mobile-submit-wrapper">
+            <button id="nextButtonForContainerForMobile">Next</button>
+        </div>
+        <script>
+
+        </script>
+    </div>
+    </div>
+    <div id="container5" class="container" style="margin-top: 5vh;" data-step="2">
+        <div>
+            <h1> <svg o class='backbutton' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                        d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                        fill="black" />
+                </svg> Hire a Professional</h1>
+            <p style="line-height: 1.5rem;">Get a custom design tailored to yours needs by our professionals team <br>
+                Provide your details, and we'll reach out at your preferred time. </p>
+            <form id='hireProfessional'>
+                <label for="name">Name </label>
+                <input type="text" name="name" required> <br> <br>
+
+                <label for="phone">Phone Number </label>
+                <input type="text" name="phone" id="phoneNumber" required maxlength="10" pattern="\d{10}"
+                    inputmode="numeric">
+                <br> <br>
+
+                <label for="name">Email </label>
+                <input type="email" name="email"> <br> <br>
+                <div style="display: flex;justify-content: space-between;">
+                    <p for="name">Preffered Mode of Contact </p>
+                    <div style="display: flex;    align-items: center;">
+                        <input type="radio" name="mode" style="accent-color: black; width: 16px;">Email &nbsp;
+                        <input type="radio" name="mode" style="accent-color: black; width: 16px;">Phone
+                    </div>
+
+                </div>
+                <br>
+                <div style="display: flex;justify-content: space-between; gap: 5vw;">
+                    <div class="box">
+                        <label for="">Date of Contact :</label>
+                        <input type="date" name="date" required style="    width: 100%;
+                        padding: 8px;
+                        box-sizing: border-box;
+                        margin-bottom: 1vh;
+                        border-radius: 4px;
+                        border: 1px solid #C5C5C5;
+                        background: #FFF;">
+                    </div>
+                    <div class="box">
+                        <label for="">Time of Contact :</label>
+                        <input type="time" name="time" required style="    width: 100%;
+                        padding: 8px;
+                        box-sizing: border-box;
+                        margin-bottom: 1vh;
+                        border-radius: 4px;
+                        border: 1px solid #C5C5C5;
+                        background: #FFF;">
+                    </div>
+                </div>
+
+                <button class="desktop-only" type="submit">Next</button>
+
+            </form>
+
+
+
+        </div>
+        <div style="margin-top: 2vw;">
+            <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Fimagehireapro.webp?alt=media"
+                style="margin-bottom: 1vw; max-width: 100%; height: auto;">
+            <h2>Important Points</h2>
+            <ul style="padding-left: 0; list-style-position: inside;">
+                <li style="margin-bottom: .5rem;">
+                    Material: We use glossy PVC cards by default. Want something else? We can discuss.
+                </li>
+                <li style="margin-bottom: .5rem;">
+                    Timely Responses: Delays in feedback or approval may extend the project timeline.
+                </li>
+                <li style="margin-bottom: .5rem;">
+                    Design Complexity & Pricing: Costs may vary based on design complexity and time required.
+                </li>
+                <li style="margin-bottom: .5rem;">
+                    Revisions Policy: Up to 5 revisions—we're with you to make sure everything feels just right.
+                </li>
+                <!-- <li style="margin-bottom: .5rem;">
+                    Refund Policy: Once the design process begins, partial or full refunds may not be available.
+                </li> -->
+            </ul>
+        </div>
+        <div class="mobile-only mobile-submit-wrapper">
+            <button type="submit" form="hireProfessional">Next</button>
+        </div>
+    </div>
+    <div id="container1" class="container active " data-step="1">
+        <div>
+            <h1>Choose Design</h1>
+            <p>
+                Choose the design you want to go with
+            </p>
+            <div class="design-options"></div>
+            <form id="designForm">
+                <div class="design-inputs">
+
+                    <div class="design-inputs">
+                        <label for="option1" class="radio vertex">
+                            <input type="radio" checked name="design" id="option1" class="colorbutton"
+                                onclick="showImage(1)">
+                            <div class="custom-radio"></div>
+                            Vertex
+                        </label>
+
+                        <label for="design2" class="radio pulse">
+                            <input type="radio" name="design" id="design2" class="colorbutton" onclick="showImage(2)">
+                            <div class="custom-radio"></div>
+                            Pulse
+                        </label>
+
+                        <label for="design4" class="radio matrix">
+                            <input type="radio" name="design" id="design4" class="colorbutton" onclick="showImage(4)">
+                            <div class="custom-radio"></div>
+                            Matrix
+                        </label>
+
+                        <label for="design3" class="radio phantom">
+                            <input type="radio" name="design" id="design3" class="colorbutton" onclick="showImage(3)">
+                            <div class="custom-radio"></div>
+                            Phantom
+                        </label>
+                    </div>
+
+
+                </div>
+                <div id="more_options">
+                    <label for="">Chose color :</label>
+                    <div class="design-inputs">
+                        <label for="classic" class="color-label">
+                            <input type="radio" checked name="vertex" style="background-color: #000000;" id="classic"
+                                class="colorbutton" data-color="white" data-image="image1.webp"
+                                data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex.webp?alt=media">
+                        </label>
+                        <label for="akshr" class="color-label">
+                            <input type="radio" name="vertex" style="background-color: #1863aa;" id="akshr"
+                                class="colorbutton blue"
+                                data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex_akshr.webp?alt=media"
+                                data-color="white" data-image="image1.webp">
+                        </label>
+                        <label for="peace" class="color-label peace">
+                            <input type="radio" name="vertex"
+                                style="background-color: #ffffff; border-color: #d4d4d4; border-width: 2px;" id="peace"
+                                class="colorbutton" data-color="white" data-image="image1.webp"
+                                data-card="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcard-page%2Fcards%2FVertex_peace.png?alt=media&token=be793a14-6bd9-420d-affa-7ac50868b5a4">
+                        </label>
+                        <style>
+                            .color-label input[type="radio"] {
+                                appearance: none;
+                                width: 6vh;
+                                height: 6vh;
+                                border-radius: 50%;
+                                border: 2px solid #d4d4d4;
+                                margin: 0 8px 0 0;
+                                cursor: pointer;
+                                vertical-align: middle;
+                                transition: box-shadow 0.2s, border-color 0.2s;
+                                box-shadow: none;
+                                outline: none;
+                                position: relative;
+                            }
+
+                            .color-label input[type="radio"]#classic {
+                                border-color: #000;
+                            }
+
+                            .color-label input[type="radio"]#akshr {
+                                border-color: #1863aa;
+                            }
+
+                            .color-label input[type="radio"]#peace {
+                                border-color: #d4d4d4;
+                            }
+
+                            .color-label input[type="radio"]:checked {
+                                box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--outer-border, #000);
+                                border-width: 2px;
+                            }
+
+                            .color-label input[type="radio"]#classic:checked {
+                                --outer-border: #000;
+                            }
+
+                            .color-label input[type="radio"]#akshr:checked {
+                                --outer-border: #1863aa;
+                            }
+
+                            .color-label input[type="radio"]#peace:checked {
+                                --outer-border: #d4d4d4;
+                            }
+                        </style>
+                        <script>
+                            document.querySelectorAll('.color-label input[type="radio"]').forEach(function (radio) {
+                                radio.addEventListener('change', function () {
+                                    document.querySelectorAll('.color-label input[type="radio"]').forEach(function (r) {
+                                        r.style.boxShadow = '';
+                                    });
+                                    if (radio.checked) {
+                                        let outer = '';
+                                        if (radio.id === 'classic') outer = '#000';
+                                        if (radio.id === 'akshr') outer = '#1863aa';
+                                        if (radio.id === 'peace') outer = '#d4d4d4';
+                                        radio.style.boxShadow = `0 0 0 4px #fff, 0 0 0 8px ${outer}`;
+                                    }
+                                });
+                            });
+                            // Set initial ring for checked radio on page load
+                            window.addEventListener('DOMContentLoaded', function () {
+                                const checked = document.querySelector('.color-label input[type="radio"]:checked');
+                                if (checked) {
+                                    let outer = '';
+                                    if (checked.id === 'classic') outer = '#000';
+                                    if (checked.id === 'akshr') outer = '#1863aa';
+                                    if (checked.id === 'peace') outer = '#d4d4d4';
+                                    checked.style.boxShadow = `0 0 0 4px #fff, 0 0 0 8px ${outer}`;
+                                }
+                            });
+                        </script>
+
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <input type="radio" class="customdesignradiobutton" name="design" onclick="customcarddesign()">
+                    <as>I want my own design</as>
+                    <br>
+                </div>
+                <button id="step1_submit" type="submit" class="desktop-only">Next</button>
+
+            </form>
+
+
+
+        </div>
+        <div class="images">
+            <img id="image1" class="active"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FVertex.webp?alt=media"
+                alt="Image 1">
+            <img id="image2"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FPulse.webp?alt=media"
+                alt="Image 2">
+            <img id="image3"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FPhantom.webp?alt=media"
+                alt="Image 3">
+            <img id="image4"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FMatrix.webp?alt=media"
+                alt="Image 4">
+            <img id="image5"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FPeace.webp?alt=media"
+                alt="Image 5">
+            <img id="image6"
+                src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2FAkshr.webp?alt=media"
+                alt="Image 6">
+            <div class="container" id="customcarddesign" class="customcarddesign">
+                <div class="upload-box">
+                    <div class="box" id="upload-box">
+                        <i class="fa-solid fa-arrow-up-from-bracket" style="font-size: 50px; color: #000;"></i> <br>
+                        <div class="upload-text">
+                            Upload Design (+200)
+                        </div>
+                    </div>
+
+                    <p>Ensure it's 3.5x2 in (8.9x5.1 cm) in .jpg, .png, or .jpeg format.</p>
+                </div>
+                <div>
+                    <div class="box" id="hireProfessional-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                            <path
+                                d="M42.8887 5.82807C40.5327 3.47007 36.4207 3.47007 34.0647 5.82807L17.3067 22.5861C16.9318 22.9611 16.7211 23.4697 16.7211 24.0001C16.7211 24.5304 16.9318 25.039 17.3067 25.4141L23.3067 31.4141C23.492 31.6004 23.7123 31.7483 23.955 31.8493C24.1977 31.9502 24.4579 32.0021 24.7207 32.0021C24.9835 32.0021 25.2437 31.9502 25.4864 31.8493C25.7291 31.7483 25.9494 31.6004 26.1347 31.4141L42.8927 14.6561C44.0619 13.4844 44.7183 11.8965 44.7175 10.2412C44.7168 8.58597 44.059 6.99868 42.8887 5.82807ZM40.0647 11.8281L24.7207 27.1721L21.5487 24.0001L36.8927 8.65607C37.3199 8.2476 37.8884 8.01997 38.4795 8.02072C39.0706 8.02147 39.6385 8.25053 40.0647 8.66007C40.4834 9.08093 40.7184 9.65043 40.7184 10.2441C40.7184 10.8377 40.4834 11.4072 40.0647 11.8281ZM16.7207 30.0001C14.1907 28.7321 9.7207 30.0001 9.7207 34.0001C9.7207 36.3941 10.7207 38.0001 6.7207 40.0001C6.7207 40.0001 13.2207 44.5001 17.7207 40.0001C20.2687 37.4521 20.7087 32.0001 16.7207 30.0001Z"
+                                fill="black" />
+                        </svg><br>
+                        Hire Professional (+600₹)
+                    </div>
+                    <p>
+                        Hire a professional for a personalized design for your unique needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-only mobile-submit-wrapper">
+            <button id="nextbuttonformobile" type="submit" form="designForm">Next</button>
+        </div>
+
+    </div>
+
+    <div id="container2" class="container" data-step="2">
+        <div>
+            <h1> <svg o class='backbutton' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none">
+                    <path
+                        d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                        fill="black" />
+                </svg> Details on the card</h1>
+            <p>
+                These details will be printed on the card.
+            </p>
+
+            <form id="styledForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation" required><br><br>
+
+                <label for="tagline">Tagline:</label>
+                <input type="text" id="tagline" name="tagline" required><br><br>
+
+                <label for="style">Style:</label>
+                <select id="style" name="style">
+                    <option value="Vertex">Vertex</option>
+                    <option value="Pulse">Pulse</option>
+                    <option value="Phantom">Phantom</option>
+                    <option value="Matrix">Matrix</option>
+                </select><br> <br>
+                <div id="more_options_vertex">
+                    <label for="">Chose color :</label>
+                    <div class="design-inputs">
+
+                        <label for="design1">
+                            <input type="radio" checked name="vertex" style="background-color: #000000;"
+                                id="classic_color" class="colorbutton"></label>
+
+                        <label for="design2">
+                            <input type="radio" name="vertex" style="background-color: #1863aa;" id="akshr_color"
+                                class="colorbutton"> </label>
+                        <label for="design3">
+                            <input type="radio" name="vertex"
+                                style="background-color: #ffffff; border-color: #d4d4d4; border-width: 2px;"
+                                id="peace_color" class="colorbutton"> </label>
+
+                    </div>
+                </div>
+                <button type="submit" class="desktop-only">Next</button>
+
+            </form>
+
+        </div>
+        <div style="width: 100%; background-image: url(https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Fbackground%2FVertex.webp?alt=media&);"
+            class='cardholder'>
+
+            <i class="fas fa-sync-alt flipbutton" id="flipbutton"></i>
+
+            <div class="holder">
+                <div class="card" id="cardb"
+                    style="background-image: url(https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcards%2FVertex-Back.webp?alt=media);background-color: #000; color: #fff;">
+
+                    <div class="main-content">
+                        <h1 name="cardName">Your Name</h1>
+                        <span class="title" id="cardDesignation">Your Desingation </span>
+                        <span class="tagline" id="cardTagline">Tagline which suits you</span>
+                    </div>
+                </div>
+            </div>
+            <div class="holder" style="display: none;">
+                <div class="card" id="cardf"
+                    style="background-image: url(https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fakshrcards%2FVertex-Front.webp?alt=media);background-color: #000; color: #fff;">
+
+                    <div class="main-content">
+                        <h1 name="cardName">Your Name</h1>
+                        <span class="title" id="cardDesignation">Your Desingation </span>
+                        <span class="tagline" id="cardTagline">Tagline which suits you</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-only mobile-submit-wrapper">
+            <button class="button" id="styleFormButtonForMobile" type=" submit" form="styledForm">Next</button>
+        </div>
+    </div>
+
+    <div id="container3" class="container " data-step="3">
+
+        <div class="container active" id="authForm">
+            <div class="content" style="background: #1968B2; ">
+                <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Flogin_image_desktop.png?alt=media"
+                    class="desktop-only" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Fimages%2Fgetakshrcard%2Flogin_image_mobile.png?alt=media"
+                    class="mobile-only" alt="">
+
+                <h1><svg o xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path
+                            d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                            fill="black" />
+                    </svg></h1>
+
+
+            </div>
+            <div class="login-box">
+                <div class="login_box_content">
+                    <img class="logo"
+                        src="https://firebasestorage.googleapis.com/v0/b/main-control-panel.firebasestorage.app/o/website%2Flogo%2FAkshr%20Logo-12%201.png?alt=media"
+                        alt="">
+                    <h1>Welcome to Akshr Family</h1>
+                    <p>Your Akshr Account is your single gateway to everything we create—now and in the future. Manage
+                        your
+                        products, explore new features, and stay connected, all in one place. One account, endless
+                        possibilities! </p>
+
+                    <div class="formbutton">
+                        <button class="form-button toggleForm  google-button">
+                            <i class="fa-regular fa-envelope fa-1-5"></i>Continue with Email</button>
+                        <button class="google-button" id="ContinueWithGoogle" style="margin-top: 0; ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M22.0406 12.1923C22.0406 11.3495 21.9722 10.7345 21.8242 10.0967H12.2002V13.9007H17.8492C17.7354 14.846 17.1204 16.2697 15.7536 17.2263L15.7345 17.3537L18.7774 19.711L18.9882 19.732C20.9244 17.9439 22.0406 15.313 22.0406 12.1923Z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M12.201 22.215C14.9685 22.215 17.2919 21.3038 18.989 19.7322L15.7544 17.2264C14.8888 17.8301 13.7271 18.2515 12.201 18.2515C9.49034 18.2515 7.18972 16.4634 6.36961 13.9919L6.2494 14.0022L3.08532 16.4509L3.04395 16.5659C4.72955 19.9143 8.19191 22.215 12.201 22.215Z"
+                                    fill="#34A853"></path>
+                                <path
+                                    d="M6.3692 13.992C6.15281 13.3542 6.02758 12.6708 6.02758 11.9647C6.02758 11.2585 6.15281 10.5751 6.35782 9.93735L6.35209 9.80152L3.14836 7.31348L3.04354 7.36333C2.34883 8.75285 1.9502 10.3132 1.9502 11.9647C1.9502 13.6161 2.34883 15.1764 3.04354 16.5659L6.3692 13.992Z"
+                                    fill="#FBBC05"></path>
+                                <path
+                                    d="M12.201 5.67757C14.1257 5.67757 15.4241 6.50898 16.1644 7.20378L19.0573 4.37921C17.2806 2.72776 14.9685 1.71411 12.201 1.71411C8.19191 1.71411 4.72955 4.01473 3.04395 7.36317L6.35822 9.93719C7.18972 7.46571 9.49034 5.67757 12.201 5.67757Z"
+                                    fill="#EB4335"></path>
+                            </svg> Continue with Google
+                        </button>
+                        <!-- <button class="apple-button" id="ContinueWithApple" style="margin-top: 0; ">
+                            <i class="fab fa-apple fa-2x"></i> Continue with Apple
+                        </button> -->
+
+                    </div>
+
+                </div>
+                <div class="form-container" style="display: none;">
+
+
+
+                    <form id="signInForm">
+                        <div class="form-group">
+                            <div class="form-header">
+                               <h2><svg xmlns="http://www.w3.org/2000/svg" class='backtologin' width="32" height="32"
+                                        viewBox="0 0 32 32" fill="non</svg>e">
+                                        <path
+                                            d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                                            fill="black" />
+                                       
+                                    </svg><strong>Namaste Ji :)</strong></h2> 
+                                    <p>Don't have an account? <span class="form-para toggleForm"> Sign Up.</span>
+                                        </p>
+                                  
+                            </div>
+                            <label for="signInEmail">Email:</label>
+                            <input type="email" id="signInEmail" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <password-input class="input-box-stack" id="signInPassword"></password-input>
+
+                            <!-- <label for="signInPassword">Password:</label>
+                            <input type="password" id="signInPassword" name="password" placeholder="Enter your password"
+                                required> -->
+                        </div>
+                        <button type="submit" class="form-button">Sign In</button>
+                    </form>
+                  
+                </div>
+
+                <div class="form-container" style="display: none;" id="signUpFormContainer">
+                    <div class="form-header">
+                        <h2><svg o class="backtologin" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32" fill="none">
+                                <path
+                                    d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                                    fill="black" />
+                            </svg>Create Akshr Account</h2>
+                    </div>
+                    <form id="signUpForm">
+                        <div class="form-group">
+                            <label for="signUpName">Name:</label>
+                            <input type="text" id="signUpName" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpEmail">Email:</label>
+                            <input type="email" id="signUpEmail" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <!--    <label for="signUpPassword">Password:</label>
+                            <input type="password" id="signUpPassword" name="password" placeholder="Enter your password"
+                                required> -->
+                            <password-input class="input-box-stack" id="signUpPassword"></password-input>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Confirm your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpPhone">Phone Number (Optional):</label>
+                            <input type="tel" id="signUpPhone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="form-button">Sign Up</button>
+                    </form>
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="#" class="toggleForm">Sign In</a></p>
+                    </div>
+                </div>
+
+
+                <style>
+
+                </style>
+            </div>
+        </div>
+        <div class="container " id="addressFormContainer">
+            <div class="content">
+                <h1> <svg xmlns="http://www.w3.org/2000/svg" class='backbutton' width="32" height="32"
+                        viewBox="0 0 32 32" fill="non</svg>e">
+                        <path
+                            d="M4.39069 15.0572C3.86999 15.5779 3.86999 16.4221 4.39069 16.9428L12.876 25.4281C13.3967 25.9488 14.2409 25.9488 14.7616 25.4281C15.2823 24.9074 15.2823 24.0632 14.7616 23.5425L7.21911 16L14.7616 8.45753C15.2823 7.93683 15.2823 7.09261 14.7616 6.57191C14.2409 6.05121 13.3967 6.05121 12.876 6.57191L4.39069 15.0572ZM26.6668 14.6667H5.3335V17.3333H26.6668V14.6667Z"
+                            fill="black" />
+                    </svg>
+
+                    Welcome <span class="userName">John Doe</span></h1>
+                <p></p>
+
+                <p>Enter your address to place order. You're just one step away from ordering your Akshr Card</p>
+                <form class="address-form">
+
+                    <div class="form-group">
+                        <label for="fullname">Full name (First and Last name)</label>
+                        <input type="text" id="fullname" name="fullname" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile number</label>
+                        <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" required maxlength="10">
+                        <support>May be used to assist delivery</support>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="addressLine1">Address Line 1 </label>
+                        <input type="text" id="addressLine1" name="addressLine1" required maxlength="60">
+                    </div>
+                    <div class="form-group">
+                        <label for="addressLine2">Address Line 2</label>
+                        <input type="text" id="addressLine2" name="addressLine2" required maxlength="60">
+                    </div>
+                    <div class="form-group sameline">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" id="pincode" name="pincode" required pattern="[0-9]{6}"
+                            placeholder="6 digits [0-9] PIN code" maxlength="6">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group sameline">
+                            <label for="city">Town/City</label>
+                            <input type="text" id="city" name="city" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <select id="state" name="state" required>
+                                <option value="ANDAMAN & NICOBAR ISLANDS">ANDAMAN & NICOBAR ISLANDS</option>
+                                <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                <option class="a-prompt" value="" selected disabled>Select</option>
+                                <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                                <option value="ASSAM">ASSAM</option>
+                                <option value="BIHAR">BIHAR</option>
+                                <option value="CHANDIGARH">CHANDIGARH</option>
+                                <option value="CHHATTISGARH">CHHATTISGARH</option>
+                                <option value="DADRA AND NAGAR HAVELI AND DAMAN AND DIU">DADRA AND NAGAR HAVELI AND
+                                    DAMAN AND DIU</option>
+                                <option value="DELHI">DELHI</option>
+                                <option value="GOA">GOA</option>
+                                <option value="GUJARAT">GUJARAT</option>
+                                <option value="HARYANA">HARYANA</option>
+                                <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                                <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+                                <option value="JHARKHAND">JHARKHAND</option>
+                                <option value="KARNATAKA">KARNATAKA</option>
+                                <option value="KERALA">KERALA</option>
+                                <option value="LADAKH">LADAKH</option>
+                                <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                                <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                                <option value="MAHARASHTRA">MAHARASHTRA</option>
+                                <option value="MANIPUR">MANIPUR</option>
+                                <option value="MEGHALAYA">MEGHALAYA</option>
+                                <option value="MIZORAM">MIZORAM</option>
+                                <option value="NAGALAND">NAGALAND</option>
+                                <option value="ODISHA">ODISHA</option>
+                                <option value="PUDUCHERRY">PUDUCHERRY</option>
+                                <option value="PUNJAB">PUNJAB</option>
+                                <option value="RAJASTHAN">RAJASTHAN</option>
+                                <option value="SIKKIM">SIKKIM</option>
+                                <option value="TAMIL NADU">TAMIL NADU</option>
+                                <option value="TELANGANA">TELANGANA</option>
+                                <option value="TRIPURA">TRIPURA</option>
+                                <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                                <option value="UTTARAKHAND">UTTARAKHAND</option>
+                                <option value="WEST BENGAL">WEST BENGAL</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div class=" current-user-info">
+                <div class="user-info" width="100%">
+                    <div>
+                        <h2>Your Information </h2>
+                        <p><strong>Name:</strong> <span class="userName">Jphon</span></p>
+
+                        <p><strong>Email:</strong> <span id="userEmail">johndoe@example.com</span></p>
+                        <p><strong>Phone:</strong> <span id="userPhone">1234567890</span></p>
+                    </div>
+
+                    <div style="margin-block-start: 0.85em; text-align: right;">
+                        <p class="desktop-only">
+                            <em>Not <span class="userName"></span>?</em><br><br>
+
+                        </p>
+                        <a id="signOutButton"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="pricediv">
+                <h2>Total Amount</h2>
+                <hr>
+                <table style="width: 100%; border-collapse: collapse; border: none;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 30%;">Akshr Card</td>
+                            <td style="width: 20%;">Qty: 1</td>
+                            <td style="width: 30%; text-align: right;" id="cardPrice">₹500</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;" id="additionalItemName"></td>
+                            <td style="width: 20%;"></td>
+                            <td style="width: 30%;text-align: right;" id="additionalItemPrice"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;">Delivery Fees</td>
+                            <td style="width: 20%;"></td>
+                            <td style="width: 30%;text-align: right;" id="deliveryFee">₹70</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;">Coupon Code</td>
+                            <td style="width: 30%; color: green;" id="couponLabel">"AKSHR20"</td>
+                            <td style=" text-align: right;;" id="couponValue">- ₹101</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;"><strong>Total Amount</strong> </td>
+                            <td style="width: 20%;"></td>
+                            <td style="width: 30%; font-weight: 500;text-align: right;" id="totalPrice">₹469</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <hr>
+                <pas class="price"
+                    style="display: block; font-family: syne; font-weight: 300; width: 100%; text-align: right;">
+                    Inclusive of all taxes.
+                </pas> <br>
+                <button id="payButton">Proceed to Pay</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="container4" class="container" data-step="4">
+        <div style="text-align: center;margin: auto;">
+            <h1 style="display: block;">Order Confirmed</h1> <br> <br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="218" height="218" viewBox="0 0 218 218" fill="none">
+                <circle cx="109" cy="109" r="109" fill="#30C150" />
+                <path d="M57 107L89 146L161 71" stroke="white" stroke-width="15" />
+            </svg> <br> <br> <br>
+            <p>Your Card will be dispatched soon and will reach you within a week. <br>
+          <a href="https://akshr.in/dashboard" style="color: black; text-decoration: underline;">Login </a>to your Akshr account to track your order.</p>
+        </div>
+
+    </div>
+    <script>
+
+        function updateProgressBar(currentStep) {
+            // Treat currentStep as 2 if it exceeds 3
+            if (currentStep > 3) {
+                currentStep = 2;
+            }
+
+            // Get all steps
+            const steps = document.querySelectorAll('.step');
+
+            // Loop through steps and update their styles
+            steps.forEach((step, index) => {
+                if (index < currentStep) {
+                    step.classList.add('active'); // Highlight completed steps
+                }
+                else {
+                    step.classList.remove('active'); // Grey out remaining steps
+                }
+            });
+
+            // Update the progress bar fill width
+            const progressBarFill = document.getElementById('progress-bar-fill');
+            const progressPercentage = ((currentStep - 1) / (steps.length - 1)) * 100;
+            progressBarFill.style.width = `${progressPercentage}%`;
+        }
+
+    </script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script type="module" src="./main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="../javascript/function_library.js"></script>
+    <script src="https://akshr.in/javascript/footer.js"></script>
+
+</body>
+
+</html>

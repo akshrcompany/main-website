@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Button Fix</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-submit-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .form-submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <form>
+        <!-- Your form inputs go here -->
+        <input type="text" placeholder="Your Name" name="name">
+        <!-- Hidden original button removed or kept hidden for mobile workaround -->
+        <button type="submit" style="display: none;">Submit</button>
+      </form>
+    </div>
+    <div>
+      <!-- Other content goes here -->
+    </div>
+  </div>
+
+  <!-- Modal Content -->
+  <div id="modal1" class="animated-modal">
+    <div class="close-animatedModal">×</div>
+    <div class="modal-content">
+      <!-- Existing modal content -->
+
+      <!-- Cloned button wrapped in a form -->
+      <form action="https://script.google.com/macros/s/AKfycbxtgFo35bUlbXrB8cAYyZ1APNY3UVA0Oe9E6m1pm6sfJWz7R3HGGEhJHMWCmjSk19Ea/exec" method="post">
+        <input type="hidden" name="name" value="User Example">
+        <input type="hidden" name="email" value="user@example.com">
+        <button type="submit" class="form-submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
